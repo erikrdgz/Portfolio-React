@@ -18,16 +18,16 @@ function AgroyaProject(props) {
                 src={AgroyaProjectImage}
  
                 //Text Block One - The Goal
-                textBlockOne="Irure laborum nulla nostrud magna aliquip est pariatur nulla nisi do sunt nulla ullamco eu. Et cupidatat qui voluptate sit voluptate ipsum elit exercitation enim. Esse ex elit ad amet. Cupidatat tempor consectetur irure dolor adipisicing enim. Id occaecat consectetur consectetur nisi. Eu velit eiusmod minim magna deserunt nisi enim in id magna. Et excepteur aute est do aliquip voluptate consectetur duis."
+                textBlockOne="Agroya approached me with their vision of their website and needed guidance on which platform and technologies to use. They needed a hemp agricultural website to pitch to investors and begin their web presence and brand journey. I knew I needed to make a website that was friendly in layout to an older demographic and needed farm imagery to maintain the agricultural brand image."
 
                 //Link CTA
                 externalLink="https://agroya.com"
 
                 //Text Block Two - The Conflict
-                textBlockTwo="Irure laborum nulla nostrud magna aliquip est pariatur nulla nisi do sunt nulla ullamco eu. Et cupidatat qui voluptate sit voluptate ipsum elit exercitation enim. Esse ex elit ad amet. Cupidatat tempor consectetur irure dolor adipisicing enim. Id occaecat consectetur consectetur nisi. Eu velit eiusmod minim magna deserunt nisi enim in id magna. Et excepteur aute est do aliquip voluptate consectetur duis."
+                textBlockTwo="The main issues I had run into with Agroya were primarily around the visual hierarchy and layout. Since there was a lot of copy and backstory I had to figure out a way to relay the information while still maintaining user retention. Text heavy websites can be tricky since users are much more receptive to imagery and the attention span of the average user diminishes very quickly."
 
                 //Text Block Three - The Resolution
-                textBlockThree="lIrure laborum nulla nostrud magna aliquip est pariatur nulla nisi do sunt nulla ullamco eu. Et cupidatat qui voluptate sit voluptate ipsum elit exercitation enim. Esse ex elit ad amet. Cupidatat tempor consectetur irure dolor adipisicing enim. Id occaecat consectetur consectetur nisi. Eu velit eiusmod minim magna deserunt nisi enim in id magna. Et excepteur aute est do aliquip voluptate consectetur duis."
+                textBlockThree="I went with a more traditional layout for this website as I wanted to maintain my ability to represent the copy but in 'chewable' chunks for the user. I knew the importance of imagery so I applied a lot of farming pictures and hemp related images. Having a box layout allowed me to also provide the site owner with workable area that would allow them to update the copy with minimal layout requirements."
             />
         </div>
     );
