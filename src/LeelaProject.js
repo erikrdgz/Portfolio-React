@@ -18,7 +18,7 @@ function LeelaProject(props) {
                 src={LeelaProjectImage}
 
                 //Text Block One - The Goal
-                textBlockOne="L'eela needed a website design that emphasizes the luxury feeling of having top quality beauty products. When the project began L'eela had mainly word of mouth clients but no real centralized location for them to shop their products. I stepped in to lead the design and development efforts of establishing their web presence and ensuring a platform handoff for them to run their day to day business operations."
+                textBlockOne="L'eela needed a website design that emphasizes the luxury of top quality beauty products. When the project began, L'eela had mainly word of mouth clients but no real centralized location for their client to shop the products. I stepped in and created a solution to this problem by leading the design and development efforts by establishing their web presence, and ensuring a successful platform handoff for the founders to run their day to day business operations."
 
                 //Link CTA
                 externalLink="https://leelacbdbodycare.com"

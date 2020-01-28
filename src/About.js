@@ -98,7 +98,7 @@ function About(props) {
           style={{ backgroundColor: 'grey', width: '480', height: '320' }}
         />
         <h4 className="text-main">Design Focused Reliable Code</h4>
-        <p>Front End Development is the mesh of my problem solving skills with technical experience and a dash of design. I often develop the very designs that I create and understand some things I think most developers &amp; designers don't. <br></br> <br></br> My experience being a developer first has allowed me to understand technical limitations to a design, and to be able to trim down the bells and whistles for tight project deadlines. My experience ranges from React to Wordpress and have had exposure to many other languages since I have had the pleasure of working with agencies; I am always looking to get my hands on a new project.</p>
+        <p>Front End Development is the mesh of my problem solving skills with technical experience and a dash of design. I often develop the very designs that I create and understand some things I think most developers &amp; designers don't. <br></br> <br></br> Being a developer, first, has allowed me to understand technical limitations to a design and given me the experience to meet tight project deadlines. My experience ranges from React to Wordpress with exposure to many other languages. I have had the pleasure of working with agencies, independent clients and I am always looking to get my hands on a new project.</p>
       </div>
 
 
