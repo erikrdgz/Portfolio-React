@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import PageFourLayout from './PageFourLayout';
-import ADMProjectImage from './assets/images/Projects/adm-project-image.jpg';
+import '../../App.css';
+import PageFourLayout from '../Subcomponents/PageFourLayout';
+import ADMProjectImage from '../../assets/images/Projects/adm-project-image.jpg';
 
 function ADMProject(props) {
     return (

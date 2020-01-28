@@ -1,6 +1,6 @@
 import React from 'react'
-import './App.css';
-import ContactForm from './ContactForm.js'
+import '../../App.css';
+import ContactForm from '../Subcomponents/ContactForm.js'
 
 function Contact(props){
     return(

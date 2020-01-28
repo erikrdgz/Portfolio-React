@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import PageFourLayout from './PageFourLayout';
-import LeelaProjectImage from './assets/images/Projects/leela-project-image.jpg';
+import '../../App.css';
+import PageFourLayout from '../Subcomponents/PageFourLayout';
+import LeelaProjectImage from '../../assets/images/Projects/leela-project-image.jpg';
 
 function LeelaProject(props) {
     return (

@@ -1,15 +1,15 @@
 import React from 'react';
 import logo from './assets/images/logo.png';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Projects from './Projects.js';
-import LeelaProject from './LeelaProject.js';
-import ADMProject from './ADMProject.js';
-import AgroyaProject from './AgroyaProject.js';
-import UIDesigns from './UIDesigns.js';
-import Contact from './Contact.js';
-import ThankYou from './ThankYou.js';
-import About from './About.js';
-import ScrollToTop from './ScrollToTop.js';
+import Projects from './Components/Pages/Projects.js';
+import LeelaProject from './Components/Pages/LeelaProject.js';
+import ADMProject from './Components/Pages/ADMProject.js';
+import AgroyaProject from './Components/Pages/AgroyaProject.js';
+import UIDesigns from './Components/Pages/UIDesigns.js';
+import Contact from './Components/Pages/Contact.js';
+import ThankYou from './Components/Pages/ThankYou.js';
+import About from './Components/Pages/About.js';
+import ScrollToTop from './Components/Subcomponents/ScrollToTop.js';
 import './App.css';
 
 function App() {

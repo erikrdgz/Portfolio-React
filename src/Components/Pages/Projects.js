@@ -1,11 +1,12 @@
 import React from "react";
-import Thumbnail from './Thumbnail.js';
-import Button from "./Button.js";
-import {Link} from 'react-router-dom'; 
+import {Link} from 'react-router-dom';
 
-import Leela from "./assets/images/Projects/leela-ui.jpg";
-import ADM from "./assets/images/Projects/adm-ui.jpg";
-import Agroya from "./assets/images/Projects/agroya-ui.jpg";
+import Thumbnail from '../Subcomponents/Thumbnail.js';
+import Button from "../Subcomponents/Button.js";
+
+import Leela from "../../assets/images/Projects/leela-ui.jpg";
+import ADM from "../../assets/images/Projects/adm-ui.jpg";
+import Agroya from "../../assets/images/Projects/agroya-ui.jpg";
 
 function Projects(props) {
 

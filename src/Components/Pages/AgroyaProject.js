@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
-import PageFourLayout from './PageFourLayout';
-import AgroyaProjectImage from './assets/images/Projects/agroya-project-image.jpg';
+import '../../App.css';
+import PageFourLayout from '../Subcomponents/PageFourLayout';
+import AgroyaProjectImage from '../../assets/images/Projects/agroya-project-image.jpg';
 
 function AgroyaProject(props) {
     return (

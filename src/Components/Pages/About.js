@@ -1,9 +1,9 @@
 import React from 'react';
-import './App.css';
+import '../../App.css';
 import Img from 'react-cool-img';
-import UI_Box from "./assets/images/ui-box.jpg";
-import UX_Box from "./assets/images/ux-box.jpg";
-import Dev_Box from "./assets/images/dev-box.jpg";
+import UI_Box from "../../assets/images/ui-box.jpg";
+import UX_Box from "../../assets/images/ux-box.jpg";
+import Dev_Box from "../../assets/images/dev-box.jpg";
 
 function About(props) {
   return (
@@ -75,7 +75,7 @@ function About(props) {
         <Img
           className="project-img rounded"
           src={UX_Box} 
-          style={{ backgroundColor: 'grey', width: '480', height: '320' }}
+          style={{ backgroundColor: '#121212', width: '100%', height: 'auto' }}
         />
         <h4 className="text-main">Good User Experience Retains Consumers</h4>
         <p>My approach to user experience starts with the current behavior and familiarize myself with the audience. The simplest way to approach the problem is to recognize exactly where the users issues lie. Upon collection of data I am able to generate ideas for design and begin to prototype the user flows and interface.<br></br> <br></br>  After that it's testing, testing, testing! Lastly after analyzing the results I can begin to implement the changes and continue pushing the needle. I have had the pleasure of increasing businesses retention rates as well as improving and shortening user click throughs.</p>
@@ -85,7 +85,7 @@ function About(props) {
         <Img
           className="project-img rounded"
           src={UI_Box} 
-          style={{ backgroundColor: 'grey', width: '480', height: '320' }}
+          style={{ backgroundColor: '#121212', width: '100%', height: 'auto' }}
         />
         <h4 className="text-main">Show More Say Less</h4>
         <p>"Great UI design is like a good joke, if you have to explain it, it's not that good of a joke." This is my UI design motto and I don't know a saying that's more directly applicable. Clarity is king in the realm of UI design and consumer retention is queen; the coupling of these two priciples provides a strong foundation in UI design. <br></br> <br></br>  This foundation is the main experience and the appearance must always come second to the functionality. I personally enjoy the design of UI's due to the fact that at that point I have the user experience with very functional approach and can now create the visual experience.  </p>
@@ -95,7 +95,7 @@ function About(props) {
         <Img
           className="project-img rounded"
           src={Dev_Box} 
-          style={{ backgroundColor: 'grey', width: '480', height: '320' }}
+          style={{ backgroundColor: '#121212', width: '100%', height: 'auto' }}
         />
         <h4 className="text-main">Design Focused Reliable Code</h4>
         <p>Front End Development is the mesh of my problem solving skills with technical experience and a dash of design. I often develop the very designs that I create and understand some things I think most developers &amp; designers don't. <br></br> <br></br> Being a developer, first, has allowed me to understand technical limitations to a design and given me the experience to meet tight project deadlines. My experience ranges from React to Wordpress with exposure to many other languages. I have had the pleasure of working with agencies, independent clients and I am always looking to get my hands on a new project.</p>
