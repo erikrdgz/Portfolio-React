@@ -21,7 +21,7 @@ function LeelaProject(props) {
                 textBlockOne="L'eela needed a website design that emphasizes the luxury feeling of having top quality beauty products. When the project began L'eela had mainly word of mouth clients but no real centralized location for them to shop their products. I stepped in to lead the design and development efforts of establishing their web presence and ensuring a platform handoff for them to run their day to day business operations."
 
                 //Link CTA
-                externalLink="https://leelabodycare.com"
+                externalLink="https://leelacbdbodycare.com"
 
                 //Text Block Two -  The Conflict
                 textBlockTwo="As many emerging industry entrepeneurs will tell you there are some hiccups running a business. One of the hiccups I ran across with L'eela was the payment platform system. What started as a WordPress website quickly needed to turn into a BigCommerce storefront due to payment processing of credit and debit cards for CBD. They had already been denied by one payment processesor and it seemed bleak in terms of finding a solution and we needed to start looking at other e-commerce platforms."
