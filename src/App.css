@@ -219,7 +219,7 @@ div[class^="skillbox"] ul li{
   text-decoration: none;
   text-align: center;
   transition: 600ms ease-in-out;
-  border: 1px solid var(--dark-bg);
+  border: 1px solid var(--main-color);
 }
 
 .designs:hover{
