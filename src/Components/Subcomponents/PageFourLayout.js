@@ -7,12 +7,8 @@ function PageFourLayout(props) {
     return (
         <div className={"grid-container-project " + props.class}>
             <div className="div-1 text-block">
-                <p>
-                    <Link to="/" className="breadcrumb text-main text-dec-none">
-                        Projects
-                    </Link>
-                    {" / " + props.breadcrumb}
-                </p>
+                
+                <h1 className="my-2">{props.title}</h1>
                 <h2>The Goal</h2>
                 <div className="blue-accent-box"></div>
                 <p className="text-justify">{props.textBlockOne}</p>
@@ -34,6 +30,21 @@ function PageFourLayout(props) {
                 <h2>The Resolution</h2>
                 <div className="blue-accent-box"></div>
                 <p className="text-justify">{props.textBlockThree}</p>
+                <hr></hr>
+                <p>
+                    <strong>Projects :</strong>
+                    <Link to="/projects/adm-labs" className="breadcrumb text-main text-dec-none">
+                        ADM Labs
+                    </Link>
+                    <Link to="/projects/agroya" className="breadcrumb text-main text-dec-none">
+                        Agroya
+                    </Link>
+                    <Link to="/projects/leela-body-care" className="breadcrumb text-main text-dec-none">
+                        L'eela Body Care
+                    </Link>
+                  
+                </p>
+                
             </div>
         </div>
     )

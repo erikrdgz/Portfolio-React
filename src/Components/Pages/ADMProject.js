@@ -11,8 +11,8 @@ function ADMProject(props) {
                 //Optional Class Name
                 class="adm"
 
-                //Breadcrumb
-                breadcrumb="ADM Labs"
+                //Title
+                title="ADM Labs"
 
                 //Project Image Source
                 src={ADMProjectImage}

@@ -92,6 +92,11 @@ p{
   border-radius: 0.5rem;
 }
 
+.breadcrumb{
+  margin: 1.5rem 0;
+  display: block;
+}
+
 .logo-image{
   height: 2rem;
 }
@@ -382,6 +387,11 @@ div[class^="skillbox"] ul li{
 
   .page-title-gallery{
     grid-area: 1/1/2/3;
+  }
+
+  .breadcrumb{
+    margin: 0 1.5rem;
+    display: inline;
   }
 }
 

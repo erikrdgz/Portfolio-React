@@ -11,8 +11,8 @@ function AgroyaProject(props) {
                 //Optional Class Name
                 class="agroya"
 
-                //Breadcrumb
-                breadcrumb="Agroya"
+                //Title
+                title="Agroya"
 
                 //Project Image Source
                 src={AgroyaProjectImage}

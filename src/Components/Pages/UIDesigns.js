@@ -14,7 +14,7 @@ function UIDesigns(props){
     <div className="grid-container-gallery text-white">
       <div className="page-title-gallery">
         <h1>UI Designs</h1>
-        <p>Created using Sketch on mac OS. I try to create a new UI daily to keep my skills up to date.</p>
+        <p>Created with Sketch &amp; Adobe Photoshop. I spend a lot of my free time creating user interfaces to keep up with modern design trends.</p>
       </div>
       <div className="img-container img-1">
       <Img

@@ -11,8 +11,8 @@ function LeelaProject(props) {
                 //Optional Class Name
                 class="leela"
 
-                //Breadcrumb
-                breadcrumb="L'eela Body Care"
+                //Title
+                title="L'eela Body Care"
 
                 //Project Image Source
                 src={LeelaProjectImage}

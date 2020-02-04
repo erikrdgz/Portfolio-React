@@ -20,6 +20,8 @@ function Projects(props) {
             I am a designer and developer living in Denver, Colorado.
             <br></br> 
             I design and develop websites and software that makes people’s lives simple.
+            <br></br> 
+             Interested in working together?
             
           </p>
           <Button
@@ -35,7 +37,11 @@ function Projects(props) {
           <p>View My Latest UI Work</p>
         </div>
       </Link>
-      <h3 className="latest-work">Latest Work</h3>
+      <div className="text-white" id="work">
+        <h3 className="latest-work">Case Studies</h3>
+        <p>Select a case study to view the full description.</p>
+      </div>
+      
       <Thumbnail
         class="project-1"
         link="/projects/leela-body-care"
