@@ -8,6 +8,7 @@ import AgroyaProject from './Components/Pages/AgroyaProject.js';
 import UIDesigns from './Components/Pages/UIDesigns.js';
 import Contact from './Components/Pages/Contact.js';
 import ThankYou from './Components/Pages/ThankYou.js';
+import Footer from './Components/Footer.js';
 import About from './Components/Pages/About.js';
 import ScrollToTop from './Components/Subcomponents/ScrollToTop.js';
 import './App.css';
@@ -28,7 +29,7 @@ function App() {
           <Link to="/contact" className="item ">Contact</Link>
           </div>
           
-
+          
         </div>
         <ScrollToTop/>
         <Route exact path="/" component={Projects} />
@@ -39,7 +40,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route exact path="/thank-you" component={ThankYou} />
-
+        
+        <Footer/>
       </div>
     </BrowserRouter>
   );

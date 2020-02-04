@@ -284,6 +284,21 @@ div[class^="skillbox"] ul li{
   color: white;
 }
 
+.footer{
+  padding: 1.2rem;
+  color: white;
+  text-align: center;
+}
+
+.footer-link{
+  color: lightgray;
+  margin: 0 1rem;
+}
+
+.footer-link:hover{
+  color: var(--main-color);
+}
+
 @media screen and (min-width: 768px){
   .grid-container {
     display: grid;
@@ -382,17 +397,17 @@ div[class^="skillbox"] ul li{
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 70vh 5vh 50vh;
+    grid-template-rows: auto;
     column-gap: 16px;
     row-gap: 32px;
     padding: 1.2rem;
-    height: 95vh;
   }
 
   .header { 
     grid-area: 1 / 1 / 2 / 3; 
     height: 100%;
   }
+
   .mockups { 
     grid-area: 1 / 3 / 2 / 4;
     height: 100%;
@@ -553,40 +568,7 @@ div[class^="skillbox"] ul li{
 }
 
 
-.App-logo {
-  height: 3rem;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* Form CSS */
 
@@ -670,6 +652,8 @@ input[type=submit] {
   clear: both;
 }
 
+
+
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
@@ -701,3 +685,5 @@ input[type=submit] {
     height: auto;
   }
 }
+
+
