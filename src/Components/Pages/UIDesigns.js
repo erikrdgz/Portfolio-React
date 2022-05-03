@@ -11,7 +11,7 @@ import UI_006 from "../../assets/images/Mockups/ui-006.jpg";
 
 function UIDesigns(props){
     return(
-    <div className="grid-container-gallery text-white">
+    <div className="grid-container-gallery mt-4 text-white">
       <div className="page-title-gallery">
         <h1>UI Designs</h1>
         <p>Created with Sketch &amp; Adobe Photoshop. I spend a lot of my free time creating user interfaces to keep up with modern design trends.</p>

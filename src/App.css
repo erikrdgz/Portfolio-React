@@ -1,11 +1,11 @@
 :root{
-  --main-color: #8fb9ff; 
+  --main-color: #1c61da; 
   --dark-bg: #121212;
 }
 
 
-html{
-  font-size: 16px;
+html,body{
+  font-size: 18px;
   background: var(--dark-bg);
 }
 
@@ -67,16 +67,29 @@ p{
   display: inline;
 }
 
-.navigation {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  padding: 1rem;
-  height: 5vh;
-  align-items: center;
-  }
+.bg-dark-color{
+  background: var(--dark-bg);
+  color: white;
+}
+
+.dropdown-item{
+  color: white;
+}
+
+.dropdown-item:hover{
+  background: var(--main-color);
+  color: white;
+}
+
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
+  background-color: #fff;
+}
   
 .branding { 
   grid-area: 1 / 1 / 2 / 2;; 
@@ -150,7 +163,7 @@ div[class^="skillbox"] ul li{
 }
 
 .thumbnail-title{
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 @media screen and (min-width: 360px){
@@ -221,7 +234,7 @@ div[class^="skillbox"] ul li{
   justify-content: center;
   align-items: center; 
   min-height: 30vh;
-  text-decoration: none;
+  text-decoration: none!important;
   text-align: center;
   transition: 600ms ease-in-out;
   border: 1px solid var(--main-color);
@@ -230,6 +243,9 @@ div[class^="skillbox"] ul li{
 .designs:hover{
   background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url('./assets/images/design-box.jpg');
   border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  color: var(--main-color);
 }
 
 .designs:active{
@@ -269,8 +285,8 @@ div[class^="skillbox"] ul li{
 
 .btn-main{
   background: var(--main-color);
-  color: var(--dark-bg);
-  border-radius: 0.5rem;
+  color: white;
+  border-radius: 4px;
   border: none;
 	display:inline-block;
 	cursor:pointer;
@@ -282,7 +298,7 @@ div[class^="skillbox"] ul li{
 
 .btn-main a{
   text-decoration: none;
-  color:var(--dark-bg);
+  color: white;
 }
 
 .text-white{
@@ -378,7 +394,7 @@ div[class^="skillbox"] ul li{
   } 
 
   .thumbnail-title{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .grid-container-gallery {
@@ -686,7 +702,7 @@ input[type=submit] {
 
   .contact-card {
     padding: 1rem 3rem;
-    width: 90%;
+    width: 40%;
   }
   .form-input{
     margin: 0.5rem 0;

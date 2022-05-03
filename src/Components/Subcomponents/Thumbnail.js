@@ -10,12 +10,12 @@ function Thumbnail(props) {
           <img src={props.image} alt="Thumbnail Image"/>
           <div className="overlay text-center">
             <div>
-            <h3 className="thumbnail-title">
+            <h1 className="thumbnail-title">
                 {props.title}
-            </h3>
-            <p className="thumbnail-category">
+            </h1>
+            <h3 className="thumbnail-category">
                 {props.category}
-            </p>
+            </h3>
             </div> 
         </div> 
         </div>
