@@ -33,7 +33,7 @@ function Projects(props) {
           </div>
         </div>
         <div className="col-md-4 d-flex align-items-stretch px-0 px-md-2 my-2 my-md-0">
-          <Link to="/designs" className="designs rounded w-100">
+          <Link to="/designs" className="designs rounded p-3 w-100">
             <div className="design-items">
               <h2>User Interface Designs</h2>
               <p>View My Latest UI Work</p>
