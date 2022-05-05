@@ -17,9 +17,16 @@ function App() {
 
   const [isActive, setActive] = useState("false");
 
+  const [expanded, setExpanded] = useState("false");
+
   const handleToggle = () => {
     setActive(!isActive);
   };
+
+  const NavLinkOpen = () => {
+    setExpanded(!expanded);
+    setActive(!isActive);
+  }
 
   return (
     <BrowserRouter>
@@ -34,14 +41,14 @@ function App() {
             </span>
           </button>
 
-          <div className="collapse navbar-collapse " id="navbarSupportedContent">
+          <div className={`collapse navbar-collapse ${expanded ? null : "hide" } ` }id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
 
-                <Link to="/" className="item nav-link">Home</Link>
+                <Link to="/" className="item nav-link" onClick={NavLinkOpen}>Home</Link>
               </li>
               <li className="nav-item">
-                <Link to="/designs" className="item nav-link">Designs</Link>
+                <Link to="/designs" className="item nav-link" onClick={NavLinkOpen}>Designs</Link>
               </li>
               <li className="nav-item dropdown item bg-dark-color">
                 <a className="nav-link dropdown-toggle bg-dark-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
@@ -49,19 +56,19 @@ function App() {
                 </a>
                 <div className="dropdown-menu bg-dark-color" aria-labelledby="navbarDropdown">
 
-                  <Link to="/projects/portal" className=" dropdown-item">Admin Portal</Link>
-                  <Link to="/projects/chatbot" className=" dropdown-item">Chat Bot</Link>
-                  <Link to="/projects/agent" className=" dropdown-item">Agent Desktop</Link>
+                  <Link to="/projects/portal" className=" dropdown-item" onClick={NavLinkOpen}>Admin Portal</Link>
+                  <Link to="/projects/chatbot" className=" dropdown-item" onClick={NavLinkOpen}>Chat Bot</Link>
+                  <Link to="/projects/agent" className=" dropdown-item" onClick={NavLinkOpen}>Agent Desktop</Link>
 
                 </div>
               </li>
               <li className="nav-item">
-                <Link to="/about" className="item nav-link">About</Link>
+                <Link to="/about" className="item nav-link" onClick={NavLinkOpen}>About</Link>
 
               </li>
               <li className="nav-item">
 
-                <Link to="/contact" className="item nav-link">Contact</Link>
+                <Link to="/contact" className="item nav-link" onClick={NavLinkOpen}>Contact</Link>
               </li>
             </ul>
 
