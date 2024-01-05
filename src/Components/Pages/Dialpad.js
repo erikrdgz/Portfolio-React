@@ -78,7 +78,7 @@ function Dialpad(props) {
                             Duration
                         </p>
                         <p className="w-100 ">
-                            Jul 2022 - Present
+                            Oct 2021 - Jul 2022
                         </p>
                     </div>
                     <div className="col-md-3">

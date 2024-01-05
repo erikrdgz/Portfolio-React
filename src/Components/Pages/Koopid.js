@@ -66,7 +66,7 @@ function Koopid(props) {
                             Duration
                         </p>
                         <p className="w-100 ">
-                            Jul 2022 - Present
+                            Feb 2020 - Oct 2021
                         </p>
                     </div>
                     <div className="col-md-3">

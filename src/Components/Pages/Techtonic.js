@@ -62,7 +62,7 @@ function Misty(props) {
                             Duration
                         </p>
                         <p className="w-100 ">
-                            Jul 2022 - Present
+                            Feb 2016 - Apr 2018
                         </p>
                     </div>
                     <div className="col-md-3">
