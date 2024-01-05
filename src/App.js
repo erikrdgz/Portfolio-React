@@ -104,7 +104,7 @@ function App() {
         <Route path="/designs" component={UIDesigns} />
         {/* <Route path="/about" component={About} /> */}
         <Route path="/contact" component={Contact} />
-        <Route exact path="/thank-you" component={ThankYou} />
+        <Route path="/thank-you" component={ThankYou} />
 
         <Footer />
       </div>
