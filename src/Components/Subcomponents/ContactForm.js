@@ -3,9 +3,9 @@ import '../../App.css';
 
 function ContactForm(props) {
     return (
-        <div className="grid-contact">
-            <div className="container-center text-white">
-            <div className="contact-card">
+        <div className="grid-contact ">
+            <div className="container-center">
+            <div className="contact-card border">
                 <h1>{props.header}</h1>
                 <p>{props.paragraph}</p>
                 <form

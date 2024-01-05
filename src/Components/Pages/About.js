@@ -7,7 +7,7 @@ import Dev_Box from "../../assets/images/dev-box.jpg";
 
 function About(props) {
   return (
-    <div className="container-fluid text-white mt-4 pt-3">
+    <div className="container-fluid mt-4 pt-3">
 
       <div className=" bio col-12">
         <h1 className="mb-3">Biography</h1>
@@ -23,7 +23,7 @@ function About(props) {
         <div className="col-lg-4 my-4 my-md-2">
           <div className="skillbox-1">
             <h3>Design</h3>
-            <hr style={{ border: "1px solid white" }}></hr>
+            <hr style={{ border: "1px solid black" }}></hr>
             <ul>
               <li>User Interface Design</li>
               <li>User Centered Design</li>
@@ -39,7 +39,7 @@ function About(props) {
         <div className="col-lg-4 my-4 my-md-2">
           <div className="skillbox-2">
             <h3>Development</h3>
-            <hr style={{ border: "1px solid white" }}></hr>
+            <hr style={{ border: "1px solid black" }}></hr>
             <ul>
               <li>HTML 5</li>
               <li>CSS 3</li>
@@ -57,7 +57,7 @@ function About(props) {
         <div className="col-lg-4 my-4 my-md-2">
           <div className="skillbox-3">
             <h3>CMS / E-commerce</h3>
-            <hr style={{ border: "1px solid white" }}></hr>
+            <hr style={{ border: "1px solid black" }}></hr>
             <ul>
               <li>WordPress</li>
               <li>WooCommerce</li>
@@ -88,7 +88,7 @@ function About(props) {
               <div>
                 <h3>User Experience Design</h3>
                 <h4 className="text-main my-4">Good User Experience Retains Consumers</h4>
-                <p>My approach to user experience starts with the current behavior and familiarize myself with the audience. The simplest way to approach the problem is to recognize exactly where the users issues lie. Upon collection of research based data I begin to define the needs of users to continue the design process.<br></br> <br></br>  Next is the brainstorming sessions and white boarding to begin to ideate possible solutions. Once I have a good sense of what I need to fix, I begin prototyping the possible solutions to push into the testing phase. Depending on the team I am working with I will either send the designs to engineering or code them myself.</p>
+                <p>My approach to user experience starts with the current behavior and familiarize myself with the audience. The simplest way to approach the problem is to recognize exactly where the users issues lie. Upon collection of research based data I begin to define the needs of users to continue the design process.<br></br> <br></br>  Next is the brainstorming sessions and black boarding to begin to ideate possible solutions. Once I have a good sense of what I need to fix, I begin prototyping the possible solutions to push into the testing phase. Depending on the team I am working with I will either send the designs to engineering or code them myself.</p>
               </div>
 
             </div>

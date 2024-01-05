@@ -1,12 +1,54 @@
 :root{
   --main-color: #1c61da; 
   --dark-bg: #121212;
+  --light-bg: #fff;
 }
 
 
 html,body{
   font-size: 18px;
-  background: var(--dark-bg);
+  background: var(--light-bg);
+}
+
+p{
+  font-weight:400!important;
+}
+
+.logo-font{
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.shadow-menu{
+  border-radius: 16px;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+
+@media screen and (min-width: 1200px){
+  .logo-font{
+    font-weight: 700!important;
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+  }
+
+  .shadow-menu{
+    border-radius: 0px;
+    box-shadow: none!important;
+  }
+  
+}
+
+.logo-font:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.navbar> a:hover{
+  text-decoration: none;
 }
 
 body {
@@ -83,12 +125,12 @@ p{
 
 
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  background-color: #fff;
+  background-color: #000;
   opacity: 1;
 }
 
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-  background-color: #fff;
+  background-color: #000;
 }
   
 .branding { 
@@ -125,6 +167,7 @@ p{
   color: white;
 }
 
+
 .grid-container-about {
   display: grid;
   column-gap: 16px;
@@ -158,13 +201,160 @@ div[class^="skillbox"] ul li{
   margin-bottom: 10px;
 }
 
-.thumbnail-image img{
-  border-radius: 0.5rem;
+
+
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+  transition: background-color 0.3s ease;
+  border-radius: 16px;
 }
 
-.thumbnail-title{
-  font-size: 3.5rem;
+
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Take the full height of the container */
+  transition: transform 0.3s ease;
 }
+
+.thumbnail:hover .contents {
+  transform: translateY(-50%);
+}
+
+img {
+  /* max-width: 100%; */
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.thumbnail:hover img {
+  opacity: 0.8;
+}
+
+.hidden-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.thumbnail:hover .hidden-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.branding-circle{
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+}
+
+
+
+
+
+@media screen and (min-width: 1024px){
+  .thumbnail{
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+
+  .thumbnail{
+    min-height: 240px;
+    border-radius: 16px;
+  
+  
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .thumbnail>a:hover{
+    color: white;
+    text-decoration:none;
+  }
+  
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Take the full height of the container */
+    transition: transform 0.8s ease;
+  }
+  
+  .thumbnail:hover .contents {
+    transform: translateY(-50%);
+  }
+  
+  img {
+ 
+    height: auto;
+    transition: opacity 0.8s ease;
+  }
+  
+  .thumbnail:hover img {
+    opacity: 1;
+  }
+  
+  .hidden-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .thumbnail:hover .hidden-text {
+    opacity: 1;
+    transform: translateY(140%);
+  }
+  
+  
+  
+  .position-title{
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    color: white;
+    text-decoration:none;
+  }
+  
+  .position-category{
+    font-size: 1.0rem;
+  
+    color: white;
+    text-decoration:none;
+  }
+  
+
+}
+
+@media screen and (min-width: 1366px){
+  .thumbnail{
+    min-height: 250px;
+  }
+}
+
+@media screen and (min-width: 2560px){
+  .thumbnail{
+    min-height: 380px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 360px){
   .item{
@@ -260,10 +450,10 @@ div[class^="skillbox"] ul li{
   align-self: center;
 }
 
-.thumbnail-image img{
+/* .thumbnail-image img{
   width: 100%;
   height: auto;
-}
+} */
 
 .image-block{
   text-align: center;
@@ -411,7 +601,7 @@ div[class^="skillbox"] ul li{
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1366px) {
   .lead-text{
     font-size: 4rem;
   }
@@ -524,6 +714,7 @@ div[class^="skillbox"] ul li{
   .img-4 { grid-area: 3 / 1 / 4 / 2; }
   .img-5 { grid-area: 3 / 2 / 4 / 3; }
   .img-6 { grid-area: 3 / 3 / 4 / 4; }
+  .img-7 { grid-area: 3 / 4 / 4 / 4; }
 
   /* End Project Grid */
 
@@ -562,7 +753,8 @@ div[class^="skillbox"] ul li{
 
 .thumbnail{
   position: relative;
-  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .overlay{
@@ -584,7 +776,7 @@ div[class^="skillbox"] ul li{
   align-items: center;
 }
 
-.thumbnail:hover .overlay {
+.thumbnail:hover > div > .overlay {
   opacity: 1;
 }
 
@@ -710,6 +902,66 @@ input[type=submit] {
   .form-textarea{
     height: auto;
   }
+
+  
+}
+
+@media (min-width: 2000px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+      max-width: 1840px;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(220px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-delay-1 {
+  animation: fadeIn 2s ease 0.5s forwards;
+}
+
+.animate-delay-2 {
+  animation: fadeIn 2.4s ease 0.5s forwards;
+}
+
+.animate-delay-3 {
+  animation: fadeIn 2.6s ease 0.5s forwards;
+}
+
+.animate-delay-4 {
+  animation: fadeIn 2.8s ease 0.5s forwards;
+}
+
+.animate-delay-5 {
+  animation: fadeIn 3s ease 0.5s forwards;
+}
+
+.animate-delay-6 {
+  animation: fadeIn 3.2s ease 0.5s forwards;
+}
+
+
+.item.nav-link{
+  font-weight: 600;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.reveal {
+  opacity: 1;
+  visibility: visible;
 }
 
 

@@ -7,7 +7,7 @@ import '../../App.css';
 function Agent(props) {
 
     return (
-        <div className="container text-white mt-4 pt-3">
+        <div className="container mt-4 pt-3">
             <h1 className="mb-4">Agent Desktop Redesign</h1>
             <div className="col-12">
                 <h3>Summary</h3>
@@ -22,7 +22,7 @@ function Agent(props) {
 
                 </div>
                 <div className="col-md-12 my-2">
-                    <img src={AgentOld} className="img-fluid rounded" />
+                    <img src={AgentOld} className="img-fluid " />
                 </div>
             </div>
             <div className="col-12 border-top border-bottom py-4 my-4">

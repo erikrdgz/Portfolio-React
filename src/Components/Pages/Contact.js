@@ -4,7 +4,7 @@ import ContactForm from '../Subcomponents/ContactForm.js'
 
 function Contact(props){
     return(
-    <div className="text-white">
+    <div className="">
       
       <ContactForm
         header="Contact Me"
