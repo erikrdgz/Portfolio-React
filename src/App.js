@@ -44,10 +44,10 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App container">
+      <div className="App container-fluid px-0">
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-white py-lg-5 mt-4 mt-md-0 shadow-menu">
-          <Link to="/" href="#"><p className="logo-font mb-0">ERIK RODRIGUEZ</p></Link>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-main py-lg-5  mt-md-0 shadow-menu">
+          <Link to="/" href="#"><p className="logo-font text-white ">ERIK RODRIGUEZ</p></Link>
 
           <button onClick={handleToggle} className={`navbar-toggler hamburger hamburger--emphatic ${isActive ? null : "is-active"}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className=" hamburger-box">
