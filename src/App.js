@@ -14,6 +14,8 @@ import Koopid from './Components/Pages/Koopid';
 import Misty from './Components/Pages/Misty';
 import Techtonic from './Components/Pages/Techtonic';
 
+import CaseStudy from './Components/Subcomponents/CaseStudy';
+
 
 
 import UIDesigns from './Components/Pages/UIDesigns.js';
@@ -24,7 +26,9 @@ import About from './Components/Pages/About.js';
 import ScrollToTop from './Components/Subcomponents/ScrollToTop.js';
 import './App.css';
 
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 function App() {
@@ -47,6 +51,15 @@ function App() {
       <div className="App container-fluid px-0">
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-main py-lg-5  mt-md-0 shadow-menu">
+
+          <div className="icons d-md-none mb-3">
+          <a href="https://github.com/erikrdgz" target="_blank" className="mx-1 text-white ">
+            <FontAwesomeIcon icon={faGithub}/>
+            </a>
+            <a href="https://www.linkedin.com/in/erikrdgz" target="_blank"  className="mx-1 text-white ">
+            <FontAwesomeIcon icon={faLinkedin}/>
+            </a>
+          </div>
           <Link to="/" href="#"><p className="logo-font text-white ">ERIK RODRIGUEZ</p></Link>
 
           <button onClick={handleToggle} className={`navbar-toggler hamburger hamburger--emphatic ${isActive ? null : "is-active"}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,43 +77,48 @@ function App() {
               <li className="nav-item">
                 <Link to="/designs" className="item nav-link" onClick={NavLinkOpen}>Designs</Link>
               </li>
-              {/* <li className="nav-item dropdown item bg-dark-color">
-                <a className="nav-link dropdown-toggle bg-dark-color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                  Case Studies
-                </a>
-                <div className="dropdown-menu bg-dark-color" aria-labelledby="navbarDropdown">
-
-                  <Link to="/projects/portal" className=" dropdown-item" onClick={NavLinkOpen}>Admin Portal</Link>
-                  <Link to="/projects/chatbot" className=" dropdown-item" onClick={NavLinkOpen}>Chat Bot</Link>
-                  <Link to="/projects/agent" className=" dropdown-item" onClick={NavLinkOpen}>Agent Desktop</Link>
-
-                </div>
-              </li> */}
-              {/* <li className="nav-item">
-                <Link to="/about" className="item nav-link" onClick={NavLinkOpen}>About</Link>
-
-              </li> */}
+              
               <li className="nav-item">
 
-                <Link to="/contact" className="item nav-link" onClick={NavLinkOpen}>Contact</Link>
+                <Link to="/contact" className="item nav-link mr-lg-5" onClick={NavLinkOpen}>Contact</Link>
               </li>
+
+              <li className="nav-item">
+
+              <a href="https://www.linkedin.com/in/erikrdgz" target="_blank"  className="item nav-link">
+            <FontAwesomeIcon icon={faLinkedin}/>
+            </a>
+                
+              </li>
+
+              <li className="nav-item">
+
+              <a href="https://github.com/erikrdgz" target="_blank" className="item nav-link">
+            <FontAwesomeIcon icon={faGithub}/>
+            </a>
+                
+              </li>
+
+              
+            
             </ul>
 
           </div>
         </nav>
         <ScrollToTop />
         <Route exact path="/" component={Projects} />
-        {/* <Route exact path="/projects/portal" component={Portal} /> */}
+        {/* <Route exact path="/case-study/portal" component={Portal} /> */}
 
-        <Route exact path="/projects/nsls" component={NSLS} />
-        <Route exact path="/projects/ifcc" component={IFCC} />
-        <Route exact path="/projects/dialpad" component={Dialpad} />
-        <Route exact path="/projects/koopid" component={Koopid} />
-        <Route exact path="/projects/misty" component={Misty} />
-        <Route exact path="/projects/techtonic" component={Techtonic} />
+        <Route exact path="/case-study/nsls" component={NSLS} />
+        <Route exact path="/case-study/ifcc" component={IFCC} />
+        <Route exact path="/case-study/dialpad" component={Dialpad} />
+        <Route exact path="/case-study/koopid" component={Koopid} />
+        <Route exact path="/case-study/misty" component={Misty} />
+        <Route exact path="/case-study/techtonic" component={Techtonic} />
+        <Route exact path="/case-study" component={CaseStudy} />
 
-        {/* <Route exact path="/projects/chatbot" component={Chatbot} />
-        <Route exact path="/projects/agent" component={Agent} /> */}
+        {/* <Route exact path="/case-study/chatbot" component={Chatbot} />
+        <Route exact path="/case-study/agent" component={Agent} /> */}
         <Route path="/designs" component={UIDesigns} />
         {/* <Route path="/about" component={About} /> */}
         <Route path="/contact" component={Contact} />
