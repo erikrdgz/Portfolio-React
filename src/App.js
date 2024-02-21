@@ -53,22 +53,22 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-main py-lg-5  mt-md-0 shadow-menu">
 
           <div className="icons d-md-none mb-3">
-          <a href="https://github.com/erikrdgz" target="_blank" className="mx-1 text-white ">
-            <FontAwesomeIcon icon={faGithub}/>
+            <a href="https://github.com/erikrdgz" target="_blank" className="mx-1 text-white ">
+              <FontAwesomeIcon icon={faGithub} />
             </a>
-            <a href="https://www.linkedin.com/in/erikrdgz" target="_blank"  className="mx-1 text-white ">
-            <FontAwesomeIcon icon={faLinkedin}/>
+            <a href="https://www.linkedin.com/in/erikrdgz" target="_blank" className="mx-1 text-white ">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
           <Link to="/" href="#"><p className="logo-font text-white ">ERIK RODRIGUEZ</p></Link>
 
           <button onClick={handleToggle} className={`navbar-toggler hamburger hamburger--emphatic ${isActive ? null : "is-active"}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className=" hamburger-box">
-            <span className="hamburger-inner"></span>
+              <span className="hamburger-inner"></span>
             </span>
           </button>
 
-          <div className={`collapse navbar-collapse ${expanded ? null : "hide" } ` }id="navbarSupportedContent">
+          <div className={`collapse navbar-collapse ${expanded ? null : "hide"} `} id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
 
@@ -77,30 +77,30 @@ function App() {
               <li className="nav-item">
                 <Link to="/designs" className="item nav-link" onClick={NavLinkOpen}>Designs</Link>
               </li>
-              
+
               <li className="nav-item">
 
                 <Link to="/contact" className="item nav-link mr-lg-5" onClick={NavLinkOpen}>Contact</Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item d-none d-md-block">
 
-              <a href="https://www.linkedin.com/in/erikrdgz" target="_blank"  className="item nav-link">
-            <FontAwesomeIcon icon={faLinkedin}/>
-            </a>
-                
+                <a href="https://www.linkedin.com/in/erikrdgz" target="_blank" className="item nav-link">
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item d-none d-md-block">
 
-              <a href="https://github.com/erikrdgz" target="_blank" className="item nav-link">
-            <FontAwesomeIcon icon={faGithub}/>
-            </a>
-                
+                <a href="https://github.com/erikrdgz" target="_blank" className="item nav-link">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+
               </li>
 
-              
-            
+
+
             </ul>
 
           </div>

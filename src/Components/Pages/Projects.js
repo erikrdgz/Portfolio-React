@@ -24,6 +24,9 @@ import NSLSVideo from "../../assets/videos/nsls-vid.mp4";
 import DialpadVideo from "../../assets/videos/dialpad-animated.mp4";
 import KoopidVideo from "../../assets/videos/koopid-animated.mp4";
 
+
+import ContactForm from "../ContactForm";
+
 function Projects(props) {
   const items = [
     { image: NSLS, bgColor: "#121D2F", bgColor2: "#19456D", title: "Senior Product Designer", category: "ED Tech", link: "/projects/nsls" },
@@ -135,7 +138,7 @@ function Projects(props) {
 
       </div>
 
-      <div className="bg-white  container p-lg-5">
+      <div className="bg-white  container-fluid p-lg-5">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-16by9">
@@ -160,7 +163,7 @@ function Projects(props) {
             summary="As the Senior Product Designer for NSLS, I oversaw the entirety of the user experience process from start to finish resulting in a cohesive experience across multiple platforms for students."
             linkText="View Case Study"
             linkUrl="/case-study"
-            chips={["UI Design", "UX Research", "Asset Creation", "Strategy", "User Testing", "Leadership", "Front End Development" ]}
+            chips={["UI Design", "UX Research", "Asset Creation", "Strategy", "User Testing", "Leadership", "Front End Development"]}
           />
 
 
@@ -170,7 +173,7 @@ function Projects(props) {
 
         </div>
       </div>
-      <div className="bg-white  container p-md-5">
+      <div className="bg-white  container-fluid p-md-5">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-4by3">
@@ -197,7 +200,7 @@ function Projects(props) {
 
         </div>
       </div>
-      <div className="bg-white  container p-md-5">
+      <div className="bg-white  container-fluid p-md-5">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-4by3">
@@ -226,6 +229,13 @@ function Projects(props) {
       <div className="bg-section container-fluid p-md-5">
         <TabSection />
       </div>
+
+      <div className=" container p-md-5">
+        <ContactForm heading="Lets Chat" />
+      </div>
+
+
+
 
 
 
