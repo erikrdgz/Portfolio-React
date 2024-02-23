@@ -162,7 +162,7 @@ function Projects(props) {
             subtitle="National Society of Leadership and Success"
             summary="As the Senior Product Designer for NSLS, I oversaw the entirety of the user experience process from start to finish resulting in a cohesive experience across multiple platforms for students."
             linkText="View Case Study"
-            linkUrl="/case-study"
+            linkUrl="/case-study/nsls"
             chips={["UI Design", "UX Research", "Asset Creation", "Strategy", "User Testing", "Leadership", "Front End Development"]}
           />
 
@@ -193,7 +193,7 @@ function Projects(props) {
             subtitle="Dialpad"
             summary=" While collaborating with the Dialpad Design Team I crafted new features for their existing platform, contributed to the design system and enhanced user performance on a new vertical."
             linkText="View Case Study"
-            linkUrl="/case-study"
+            linkUrl="/case-study/dialpad"
             chips={["UI Design", "UX Research", "Asset Creation"]}
           />
 
@@ -219,7 +219,7 @@ function Projects(props) {
             subtitle="Koopid.ai"
             summary=" Working as the Lead Designer and Developer allowed me to redesign Koopid's multifaceted application, create a design system, conduct user research and interviews allowing me to expedite the user to agent connection resulting in an efficient user workflow."
             linkText="View Case Study"
-            linkUrl="/case-study"
+            linkUrl="/case-study/koopid"
             chips={["UI Design", "UX Research", "Asset Creation"]}
           />
 

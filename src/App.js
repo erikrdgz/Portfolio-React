@@ -7,14 +7,15 @@ import Chatbot from './Components/Pages/Chatbot.js';
 import Agent from './Components/Pages/Agent.js';
 
 
-import NSLS from './Components/Pages/NSLS';
+import NSLS from './Components/Pages/CaseStudy/NSLSCaseStudy.js';
 import IFCC from './Components/Pages/IFCC';
-import Dialpad from './Components/Pages/Dialpad';
-import Koopid from './Components/Pages/Koopid';
+import Dialpad from './Components/Pages/CaseStudy/DialpadCaseStudy.js';
+import Koopid from './Components/Pages/CaseStudy/KoopidCaseStudy.js';
 import Misty from './Components/Pages/Misty';
 import Techtonic from './Components/Pages/Techtonic';
 
 import CaseStudy from './Components/Subcomponents/CaseStudy';
+
 
 
 
@@ -26,9 +27,16 @@ import About from './Components/Pages/About.js';
 import ScrollToTop from './Components/Subcomponents/ScrollToTop.js';
 import './App.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
+import { animated, useSpring } from 'react-spring';
+
+
+import Sidebar from "./Components/Subcomponents/Sidebar.js";
 
 
 function App() {
@@ -45,6 +53,45 @@ function App() {
     setExpanded(!expanded);
     setActive(!isActive);
   }
+
+  const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsSideMenuOpen(!isSideMenuOpen);
+  };
+
+  const handleDesignsClick = (event) => {
+    event.preventDefault(); // Prevent default navigation behavior
+    toggleMenu(); // Toggle the side menu
+  };
+
+  // Define spring animation for the Designs link
+  const designsLinkAnimation = useSpring({
+    opacity: isSideMenuOpen ? 1 : 0,
+    transform: isSideMenuOpen ? 'translateX(0%)' : 'translateX(-100%)',
+  });
+
+  // Define spring animation for each hidden link with staggered delays
+  const nslsLinkAnimation = useSpring({
+    opacity: isSideMenuOpen ? 1 : 0,
+    transform: isSideMenuOpen ? 'translateX(0%)' : 'translateX(-100%)',
+    config: { tension: 500, friction: 30 }, // Adjust spring config for faster animation
+    delay: isSideMenuOpen ? 0 : 200 // Apply delay only when menu opens
+  });
+
+  const dialpadLinkAnimation = useSpring({
+    opacity: isSideMenuOpen ? 1 : 0,
+    transform: isSideMenuOpen ? 'translateX(0%)' : 'translateX(-100%)',
+    config: { tension: 500, friction: 30 }, // Adjust spring config for faster animation
+    delay: isSideMenuOpen ? 100 : 300 // Apply delay only when menu opens
+  });
+
+  const koopidLinkAnimation = useSpring({
+    opacity: isSideMenuOpen ? 1 : 0,
+    transform: isSideMenuOpen ? 'translateX(0%)' : 'translateX(-100%)',
+    config: { tension: 500, friction: 30 }, // Adjust spring config for faster animation
+    delay: isSideMenuOpen ? 200 : 400 // Apply delay only when menu opens
+  });
 
   return (
     <BrowserRouter>
@@ -72,8 +119,28 @@ function App() {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
 
-                <Link to="/" className="item nav-link" onClick={NavLinkOpen}>Portfolio</Link>
+                <Link to="/" className="item nav-link" onClick={NavLinkOpen}>Home</Link>
               </li>
+
+              <a href="#" className="item nav-link bg-none border-none" onClick={toggleMenu}>
+                {isSideMenuOpen ? 'Case Study' : 'Case Study'}
+              </a>
+              {isSideMenuOpen && (
+          <animated.li style={designsLinkAnimation} className="nav-item d-flex">
+            {/* Wrap the hidden links in a container with flex properties */}
+            <div className="d-flex flex-column flex-md-row">
+              <animated.div style={nslsLinkAnimation}>
+                <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>NSLS</Link>
+              </animated.div>
+              <animated.div style={dialpadLinkAnimation}>
+                <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>Dialpad</Link>
+              </animated.div>
+              <animated.div style={koopidLinkAnimation}>
+                <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>Koopid.ai</Link>
+              </animated.div>
+            </div>
+          </animated.li>
+        )}
               <li className="nav-item">
                 <Link to="/designs" className="item nav-link" onClick={NavLinkOpen}>Designs</Link>
               </li>
@@ -105,6 +172,9 @@ function App() {
 
           </div>
         </nav>
+
+
+
         <ScrollToTop />
         <Route exact path="/" component={Projects} />
         {/* <Route exact path="/case-study/portal" component={Portal} /> */}
@@ -116,6 +186,7 @@ function App() {
         <Route exact path="/case-study/misty" component={Misty} />
         <Route exact path="/case-study/techtonic" component={Techtonic} />
         <Route exact path="/case-study" component={CaseStudy} />
+
 
         {/* <Route exact path="/case-study/chatbot" component={Chatbot} />
         <Route exact path="/case-study/agent" component={Agent} /> */}

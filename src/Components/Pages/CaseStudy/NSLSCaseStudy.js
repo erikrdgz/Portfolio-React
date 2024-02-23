@@ -1,23 +1,15 @@
 import React, { useState } from 'react';
-import NSLSBanner from "../../assets/images/Companies/Nsls-Banner-2.png";
-import Home from "../../assets/images/Cases/nsls/ignite-home.png";
-import Menu from "../../assets/images/Cases/nsls/ignite-menu.png";
-import Chat from "../../assets/images/Cases/nsls/ignite-chat.png";
-import Wireframe from "../../assets/images/Cases/nsls/wireframe.png";
-import Figjam from "../../assets/images/Cases/nsls/figjam.png";
-import DesignSystems from "../../assets/images/Cases/nsls/design-systems.png";
+import NSLSBanner from "../../../assets/images/Companies/Nsls-Banner-2.png";
 
-import ZoomableImageSection from '../Subcomponents/ZoomableImageSection';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import '../../App.css';
-import BrandingCircle from '../Subcomponents/BrandingCircle';
+
+
+import '../../../App.css';
+
 
 import { useSpring, animated } from 'react-spring';
+import ContactForm from "../../ContactForm";
 
-import ContactForm from "../ContactForm";
-
-function CaseStudy(props) {
+function NSLSCase(props) {
     const [isZoomed, setIsZoomed] = useState(false);
 
     const handleZoomChange = (zoomState) => {
@@ -65,7 +57,7 @@ function CaseStudy(props) {
                     <div className="col-md-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
                         <animated.img
                             style={bannerAnimation}
-                            src={Wireframe}
+                            src={NSLSBanner}
                             alt="Banner"
                             className="img-fluid w-100 rounded shadow cs-image"
                         />
@@ -106,7 +98,7 @@ function CaseStudy(props) {
                         <div className="col-md-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
                             <animated.img
                                 style={bannerAnimation}
-                                src={Wireframe}
+                                src={NSLSBanner}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow cs-image"
                             />
@@ -114,7 +106,7 @@ function CaseStudy(props) {
                         <div className="col-12 order-3">
                             <animated.img
                                 style={bannerAnimation}
-                                src={Wireframe}
+                                src={NSLSBanner}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow cs-image"
                             />
@@ -131,7 +123,7 @@ function CaseStudy(props) {
                     <div className="col-md-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
                         <animated.img
                             style={bannerAnimation}
-                            src={Wireframe}
+                            src={NSLSBanner}
                             alt="Banner"
                             className="img-fluid w-100 rounded shadow"
                         />
@@ -153,7 +145,7 @@ function CaseStudy(props) {
                         <div className="col-md-3">
                             <animated.img
                                 style={bannerAnimation}
-                                src={Wireframe}
+                                src={NSLSBanner}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow"
                             />
@@ -161,7 +153,7 @@ function CaseStudy(props) {
                         <div className="col-md-3">
                             <animated.img
                                 style={bannerAnimation}
-                                src={Wireframe}
+                                src={NSLSBanner}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow"
                             />
@@ -169,7 +161,7 @@ function CaseStudy(props) {
                         <div className="col-md-3">
                             <animated.img
                                 style={bannerAnimation}
-                                src={Wireframe}
+                                src={NSLSBanner}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow"
                             />
@@ -177,7 +169,7 @@ function CaseStudy(props) {
                         <div className="col-md-3">
                             <animated.img
                                 style={bannerAnimation}
-                                src={Wireframe}
+                                src={NSLSBanner}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow"
                             />
@@ -219,6 +211,6 @@ function CaseStudy(props) {
     );
 }
 
-export default CaseStudy;
+export default NSLSCase;
 
 
