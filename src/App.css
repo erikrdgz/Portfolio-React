@@ -130,11 +130,15 @@ body {
   }
 
   .section-spacing{
-    padding: 12rem 0;
+    padding: 8rem 0rem 4rem 0rem;
   }
 
   .section-title{
-    font-size: 4rem;
+    font-size: 3.2rem;
+  }
+
+  .section-p{
+    font-size: 0.8rem;
   }
 }
 
