@@ -1307,10 +1307,10 @@ textarea:focus {
 }
 
 .section-list > li {
-  border-left: 2px solid var(--accent-2)!important;
+  /* border-left: 2px solid var(--accent-2)!important; */
   margin: 0.5rem 0;
   border-bottom: 0px!important;
-  padding: 0.15rem 1.25rem!important;
+  padding: 0.15rem 1.25rem 0.15rem 0rem!important;
 }
 
 

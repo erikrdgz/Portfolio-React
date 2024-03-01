@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import NSLSBanner from "../../../assets/images/Companies/Nsls-Banner-2.png";
 import { FiArrowRight } from 'react-icons/fi';
+import { FiAlertCircle } from "react-icons/fi";
+import { FiChevronDown } from "react-icons/fi";
+import { FiCheckCircle } from "react-icons/fi";
+
 
 
 
@@ -9,6 +13,7 @@ import '../../../App.css';
 
 import { useSpring, animated } from 'react-spring';
 import ContactForm from "../../ContactForm";
+import AnimatedList from '../../Subcomponents/AnimatedList';
 
 function NSLSCase(props) {
     const [isZoomed, setIsZoomed] = useState(false);
@@ -23,6 +28,43 @@ function NSLSCase(props) {
         from: { opacity: 0, transform: 'translateY(50px)' },
         config: { tension: 100, friction: 10 }, // Custom stiffness and damping values
     });
+
+    const problemItems = [
+        { text: 'User retention challenges', icon: FiAlertCircle },
+        { text: 'Missed cross-promotion opportunities', icon: FiAlertCircle },
+        { text: 'Increased development complexity', icon: FiAlertCircle },
+        { text: 'Negative impact on user perception', icon: FiAlertCircle }
+    ];
+
+    // Solutions for Unified Communication Channels
+    const communicationSolutions = [
+        { text: "Utilize in house app Ignite integration to ensure seamless voice and video communication during NSLS's exhilarating workshops and seminars.", icon: FiCheckCircle },
+        { text: "Spice up the learning experience with asynchronous communication features, turning course materials into lively discussion hubs.", icon: FiCheckCircle },
+        { text: "Stir up the digital chatter by expanding communication channels with Ignite, where NSLS members can share ideas and forge lasting connections.",icon: FiCheckCircle}
+    ];
+
+    // Solutions for Engaging Virtual Environments
+    const virtualEnvironmentSolutions = [
+        { text: "Craft visually stunning virtual spaces that whisk NSLS members away to the familiar warmth of physical campuses, banishing feelings of isolation and loneliness.", icon: FiCheckCircle },
+        { text: "Keep the NSLS community buzzing with activity by ensuring a constant virtual presence for all members, sparking impromptu conversations and collaborations on the Ignite app.", icon: FiCheckCircle },
+        { text: "Let NSLS members showcase their unique flair with customizable avatars and profiles, turning every interaction into a chance to express their personalities.", icon: FiCheckCircle }
+    ];
+
+    // Solutions for Cohesive Team Collaboration
+    const teamCollaborationSolutions = [
+        { text: "Get the NSLS team spirit soaring with virtual meetups, networking events, and group discussions in designated virtual rooms that feel like home.", icon: FiCheckCircle },
+        { text: "Design specialized rooms for specific meetings, from lively leadership seminars to focused group projects, keeping teamwork flowing and spirits high.", icon: FiCheckCircle },
+        { text: "Infuse some fun into team bonding with interactive features and team-building exercises, turning collaboration into an adventure NSLS members can't resist.", icon: FiCheckCircle }
+    ];
+
+    // Solutions for Streamlined Resource Access
+    const resourceAccessSolutions = [
+        { text: "Make resource management a breeze with a robust system that puts educational materials, leadership resources, and career tools just a click away.", icon: FiCheckCircle },
+        { text: "Turbocharge productivity with integrations with seamless user experiences across all NSLS applications from courses to community.", icon: FiCheckCircle },
+        { text: "Create a streamlined process for onboarding new students to make that pesky registration process a thing of the past.", icon: FiCheckCircle }
+    ];
+
+
     return (
         <div className="container-fluid px-0">
 
@@ -55,55 +97,50 @@ function NSLSCase(props) {
 
             <section className="container section-spacing ">
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3 ">
+                    <div className="col-md-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
                         <animated.img
                             style={bannerAnimation}
                             // src={NSLSBanner}
                             src="https://placehold.co/500x400"
                             alt="Banner"
-                            className="img-fluid w-100 rounded shadow cs-image"
+                            className="img-fluid w-100 rounded shadow cs-image mx-auto"
                         />
                     </div>
                     <div className="col-md-6 order-1 order-md-2">
                         <h2 className="py-2 font-weight-bold section-title cs-section-title">The Problem</h2>
                         <p className=" font-weight-bolder  section-p cs-section-p">
-                        NSLS faced a challenge when they opted for separate applications without ensuring a cohesive design across them. This fragmented approach led to inconsistency in user experience and brand representation, potentially causing confusion among users. By lacking a unified design language, NSLS risked diluting their brand identity and weakening the overall impact of their educational offerings on leadership.
+                            NSLS faced a challenge when they opted for separate applications without ensuring a cohesive design across them. This fragmented approach led to inconsistency in user experience and brand representation, potentially causing confusion among users. By lacking a unified design language, NSLS risked diluting their brand identity and weakening the overall impact of their educational offerings on leadership.
                         </p>
-                        <ul className="list-group list-group-flush section-list cs-section-list-group">
-                            <li className="list-group-item cs-list-item font-weight-bolder">User retention challenges</li>
-                            <li className="list-group-item cs-list-item font-weight-bolder">Missed cross-promotion opportunities</li>
-                            <li className="list-group-item cs-list-item font-weight-bolder">Increased development complexity</li>
-                            <li className="list-group-item cs-list-item font-weight-bolder">Negative impact on user perception</li>
-                        </ul>
+                        <AnimatedList items={problemItems} iconClass="text-danger" />
                     </div>
                 </div>
 
             </section>
 
-            
+
             <section className="container-fluid section-spacing px-4">
                 <div className="row">
-                <div className="col-md-4">
+                    <div className="col-md-4">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Discovery</h3>
-                            <FiArrowRight size={26} className="mt-3 text-main"/>
+                            <FiArrowRight size={26} className="mt-3 text-main" />
                         </div>
-                        
+
                         <p className=" font-weight-bolder  section-p cs-section-p">
-                        In the discovery process, I concentrated on uncovering the root causes of design inconsistencies and user experience gaps across NSLS applications. Through collaborative discussions, I prioritized resolving fragmentation issues, ensuring a unified design approach and seamless user journey. By defining clear objectives and measurable outcomes, I established a strategic roadmap for implementing cohesive solutions that enhance brand identity and user engagement.
+                            During the discovery phase, I delved deep into unraveling the mysteries behind NSLS's design mishaps and user experience hiccups across its myriad applications. Collaborating closely with the team, I led the charge in untangling fragmentation woes, weaving together a cohesive design tapestry for a smoother user journey. With clear objectives and measurable outcomes in mind, I charted a strategic course towards implementing solutions that not only spruced up the brand's identity but also captivated users, making their experience truly unforgettable.
                         </p>
-                        
+
                     </div>
-                    
+
                     <div className="col-md-4 ">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Research</h3>
-                            <FiArrowRight size={26} className="mt-3 text-main"/>
+                            {/* <FiArrowRight size={26} className="mt-3 text-main"/> */}
                         </div>
                         <p className=" font-weight-bolder  section-p cs-section-p">
-                        In my research phase, I dive into market analysis, conduct user interviews, and evaluate competitors to understand NSLS's struggle with maintaining cohesive design across applications. Through thorough examination of user feedback and behavior patterns, I pinpoint specific pain points and areas needing improvement. Iterative testing and validation then refine these insights, ensuring proposed design enhancements effectively address user needs and align with NSLS's overarching objectives.
+                            During the research phase, I embarked on a journey through market analysis, user interviews, and competitor snooping to uncover NSLS's struggle with scattered design across applications. Armed with user quirks and behavior insights, I pinpointed specific pain points and areas ripe for a design makeover. Through rounds of playful testing and validation, I polished these insights, ensuring our design revamp not only met user needs but also injected some excitement into NSLS's mission.
                         </p>
-                        
+
                     </div>
 
                     <div className="col-md-4 d-flex justify-content-end align-items-center  py-3">
@@ -114,27 +151,31 @@ function NSLSCase(props) {
                             className="img-fluid w-100 rounded shadow cs-image"
                         />
                     </div>
-                    
+
                 </div>
 
-            </section>
 
-            <section className="section-spacing bg-light-main">
+            </section>
+            <div className="col-12 bg -white d-flex justify-content-center py-3">
+                <div>
+                    <FiChevronDown size={36} className='text-main' />
+                </div>
+
+            </div>
+
+            <section className="section-spacing ">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1">
-                            <h3 className="py-2 font-weight-bold ">Strategy &amp; Design</h3>
-                            <h2 className="py-2 font-weight-bold section-title cs-section-title">Title</h2>
+                            <h3 className="py-2 font-weight-bold text-main">Strategy &amp; Design</h3>
+                            <h2 className="py-2 font-weight-bold section-title cs-section-title mb-4">Revamping NSLS's Interface and User Experience</h2>
                             <p className=" font-weight-bolder  section-p cs-section-p">
-                                In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. 
+
+
+                                Tackling NSLS's hurdles with fragmented applications and inconsistent design, I spearheaded a thorough audit of their existing platforms. This entailed diving into user feedback, uncovering pain points, and scrutinizing design discrepancies. Teaming up closely with the product squad, I took the reins in crafting a unified design system that embraced brand guidelines, UI components, and interaction patterns. <br /> <br />
+                                Executing this cohesive design approach entailed fashioning reusable components and templates to guarantee uniformity across all NSLS platforms. Furthermore, I placed a premium on user testing and feedback loops, constantly fine-tuning design solutions to precisely cater to user needs and harmonize with NSLS's overarching objectives.
                             </p>
-                            <ul className="list-group list-group-flush section-list cs-section-list-group">
-                                <li className="list-group-item bg-none cs-list-item">An item</li>
-                                <li className="list-group-item bg-none cs-list-item">A second item</li>
-                                <li className="list-group-item bg-none cs-list-item">A third item</li>
-                                <li className="list-group-item bg-none cs-list-item">A fourth item</li>
-                                <li className="list-group-item bg-none cs-list-item">And a fifth one</li>
-                            </ul>
+
                         </div>
                         <div className="col-md-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
                             <animated.img
@@ -151,6 +192,43 @@ function NSLSCase(props) {
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow cs-image "
                             />
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section className="section-spacing bg-light-main">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 text-center ">
+                            <h2 className="py-2 font-weight-bold section-title cs-section-title mb-4">The Solution</h2>
+                            <p className=" font-weight-bolder  section-p cs-section-p">
+                                NSLS's journey towards cohesive digital experiences is an adventure in itself! By embracing tailored solutions, I transformed its challenges into opportunities for growth, connection, and exploration within its vibrant digital ecosystem.
+                            </p>
+                        </div>
+                      
+
+                    </div>
+                </div>
+                <div className="container-fluid">
+                    <div className="row">
+                    <div className="col-md-3">
+                            <h5 className='font-weight-bolder'>Unified Communication Channels</h5>
+                            <AnimatedList items={communicationSolutions} fontSize="0.85rem" iconClass="text-success"/>
+                        </div>
+                        <div className="col-md-3">
+                            <h5 className='font-weight-bolder'>Engaging Virtual Environments</h5>
+                            <AnimatedList items={virtualEnvironmentSolutions} fontSize="0.85rem" iconClass="text-success"/>
+                        </div>
+                        <div className="col-md-3">
+                            <h5 className='font-weight-bolder'>Cohesive Team Collaboration</h5>
+                            <AnimatedList items={teamCollaborationSolutions} fontSize="0.85rem"  iconClass="text-success"/>
+                        </div>
+                        <div className="col-md-3">
+                            <h5 className='font-weight-bolder'>Streamlined Resource Access</h5>
+                            <AnimatedList items={resourceAccessSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
                     </div>
                 </div>

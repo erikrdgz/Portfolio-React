@@ -27,7 +27,7 @@ const AnimatedSection = ({ title, subtitle, summary, linkText, linkUrl, chips })
           <animated.a href={linkUrl} className="view-project-btn btn-main pl-0" style={trail[3]}>{linkText} <span><FontAwesomeIcon icon={faArrowRight} className="ml-3" /></span></animated.a>
           <div className="chip-section">
             {chips.map((chip, index) => (
-              <animated.p key={index} className="chip mx-2" style={trail[index + 4]}>{chip}</animated.p>
+              <animated.p key={index} className="chip mr-2" style={trail[index + 4]}>{chip}</animated.p>
             ))}
           </div>
         </div>
