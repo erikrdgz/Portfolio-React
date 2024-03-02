@@ -3,13 +3,11 @@ import React from "react";
 import { useTrail, animated, useSpring } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-
-
-import Thumbnail from '../Subcomponents/Thumbnail.js';
+import { FiChevronRight } from "react-icons/fi";
 
 import AnimatedSection from "../Subcomponents/AnimatedSection.js";
+import AnimatedList from "../Subcomponents/AnimatedList.js";
+import AnimatedTitleParagraph from "../Subcomponents/AnimatedTitleParagraph.js";
 
 import NSLS from "../../assets/images/Companies/Nsls-Banner-2.png";
 import IFCC from "../../assets/images/Companies/ifcc-logo.png";
@@ -49,6 +47,81 @@ function Projects(props) {
     const goldenRatio = 1.61803398875;
     return Math.round(1000 * goldenRatio ** index);
   };
+
+  const researchTabContent = [
+    { text: "Delving into user insights to uncover their motivations.", icon: FiChevronRight },
+    { text: "Conducting thorough UX audits to evaluate existing user experiences.", icon: FiChevronRight },
+    { text: "Identifying key user pain points and challenges.", icon: FiChevronRight },
+    { text: "Analyzing data to extract actionable insights.", icon: FiChevronRight }
+  ];
+
+  const strategyTabContent = [
+    { text: "Facilitating stakeholder workshops to define strategic objectives.", icon: FiChevronRight },
+    { text: "Analyzing data to identify convergence points between business and user goals.", icon: FiChevronRight },
+    { text: "Developing user personas to represent target audiences.", icon: FiChevronRight },
+    { text: "Mapping out user journeys to identify touchpoints and pain points.", icon: FiChevronRight }
+  ];
+
+  const designTabContent = [
+    { text: "Exploring innovative design solutions through iterative prototyping.", icon: FiChevronRight },
+    { text: "Creating user flows based on extensive user research and personas.", icon: FiChevronRight },
+    { text: "Iterating designs based on user feedback to enhance usability.", icon: FiChevronRight },
+    { text: "Crafting visually appealing UI designs that prioritize user experience.", icon: FiChevronRight }
+  ];
+
+  const validationTabContent = [
+    { text: "Conducting comprehensive user testing sessions to evaluate design effectiveness.", icon: FiChevronRight },
+    { text: "Analyzing user behavior data to identify areas for improvement.", icon: FiChevronRight },
+    { text: "Incorporating user feedback into design iterations to enhance usability.", icon: FiChevronRight },
+    { text: "Conducting iterative design cycles based on insights gathered from validation processes.", icon: FiChevronRight }
+  ];
+
+  const tabData = [
+    {
+      name: 'Research',
+      content:
+        <div>
+          <AnimatedTitleParagraph
+            title="In-Depth Research and User Empathy"
+            paragraph="My approach begins with extensive research aimed at understanding user behaviors, desires, and challenges. During the initial exploration phase, I delve deep into user experiences, gathering insights into their preferences and pain points. Through methods like interviews, surveys, and usability tests, I uncover valuable data that guides the design process."
+          />
+          <AnimatedList items={researchTabContent} fontSize="0.95rem" iconClass="text-main" />
+        </div>
+    },
+    {
+      name: 'Strategy',
+      content:
+        <div>
+          <AnimatedTitleParagraph
+            title="Strategic Alignment of Business and User Goals"
+            paragraph="My strategy revolves around aligning business objectives with user needs to create meaningful experiences. By facilitating collaborative workshops and strategy sessions, I bridge the gap between organizational goals and user expectations. Through techniques like persona development and journey mapping, I chart a course that balances user satisfaction with business objectives."
+          />
+          <AnimatedList items={strategyTabContent} fontSize="0.95rem" iconClass="text-main" />
+        </div>
+    },
+    {
+      name: 'Design',
+      content:
+        <div>
+          <AnimatedTitleParagraph
+            title="Simplifying Complexity Through Design"
+            paragraph="Transitioning from abstract concepts to tangible designs, my focus is on simplifying complex processes into intuitive interfaces. By crafting wireframes, user flows, and prototypes, I ensure that each design decision serves both user needs and business objectives. The result is an interface that seamlessly integrates functionality with user delight."
+          />
+          <AnimatedList items={designTabContent} fontSize="0.95rem" iconClass="text-main" />
+        </div>
+    },
+    {
+      name: 'Validation',
+      content:
+        <div>
+          <AnimatedTitleParagraph
+            title="Validating Designs for User-Centric Excellence"
+            paragraph="Ensuring the effectiveness of designs requires thorough validation through user testing and feedback analysis. By conducting usability tests, analyzing user behavior, and gathering feedback, I refine designs to meet high usability standards and align with user expectations. This iterative process drives continuous improvement towards user-centric excellence."
+          />
+          <AnimatedList items={validationTabContent} fontSize="0.95rem" iconClass="text-main" />
+        </div>
+    }
+  ];
 
 
   // const headerAnimation = useSpring({
@@ -226,8 +299,8 @@ function Projects(props) {
 
         </div>
       </div>
-      <div className="bg-section container-fluid p-md-5">
-        <TabSection />
+      <div className="bg-light-main container-fluid p-md-5">
+        <TabSection tabData={tabData} />
       </div>
 
       <div className=" container p-md-5">

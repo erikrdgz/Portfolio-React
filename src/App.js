@@ -123,24 +123,24 @@ function App() {
               </li>
 
               <a href="#" className="item nav-link bg-none border-none" onClick={toggleMenu}>
-                {isSideMenuOpen ? 'Case Study' : 'Case Study'}
+                {isSideMenuOpen ? 'Case Study >' : 'Case Study <'}
               </a>
               {isSideMenuOpen && (
-          <animated.li style={designsLinkAnimation} className="nav-item d-flex">
-            {/* Wrap the hidden links in a container with flex properties */}
-            <div className="d-flex flex-column flex-md-row">
-              <animated.div style={nslsLinkAnimation}>
-                <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>NSLS</Link>
-              </animated.div>
-              <animated.div style={dialpadLinkAnimation}>
-                <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>Dialpad</Link>
-              </animated.div>
-              <animated.div style={koopidLinkAnimation}>
-                <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>Koopid.ai</Link>
-              </animated.div>
-            </div>
-          </animated.li>
-        )}
+                <animated.li style={designsLinkAnimation} className="nav-item d-flex">
+                  {/* Wrap the hidden links in a container with flex properties */}
+                  <div className="d-flex flex-column flex-md-row">
+                    <animated.div style={nslsLinkAnimation}>
+                      <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>NSLS</Link>
+                    </animated.div>
+                    <animated.div style={dialpadLinkAnimation}>
+                      <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>Dialpad</Link>
+                    </animated.div>
+                    <animated.div style={koopidLinkAnimation}>
+                      <Link to="/designs" className="item nav-link" onClick={handleDesignsClick}>Koopid.ai</Link>
+                    </animated.div>
+                  </div>
+                </animated.li>
+              )}
               <li className="nav-item">
                 <Link to="/designs" className="item nav-link" onClick={NavLinkOpen}>Designs</Link>
               </li>
