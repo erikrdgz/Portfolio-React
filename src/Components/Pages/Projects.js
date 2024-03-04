@@ -165,7 +165,7 @@ function Projects(props) {
   const roleTrail = useTrail(roles.length, {
     from: { opacity: 0, transform: 'translateY(20px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
-    config: { tension: 100, friction: 20 },
+    config: { tension: 100, friction: 5 },
     delay: 500,
   });
 
@@ -187,7 +187,7 @@ function Projects(props) {
   return (
 
     <>
-      <div className=" bg-main background text-center d-flex align-items-center justify-content-center" style={{ height: "100vh" }}>
+      <div className=" bg-main background text-center d-flex align-items-center justify-content-center home-header">
         <div className="text-white p-3 px-md-5">
           <div className="header-font px-md-5">
             <h1>
