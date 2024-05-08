@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 const AnimatedTitleParagraph = ({ title, paragraph }) => {
   // UseInView hook to detect when the component is in view
   const { ref, inView } = useInView({
-    triggerOnce: false, // Only trigger once
+    triggerOnce: true, // Only trigger once
     threshold: 0.6, // Trigger animation when at least 50% of the component is in view
   });
 

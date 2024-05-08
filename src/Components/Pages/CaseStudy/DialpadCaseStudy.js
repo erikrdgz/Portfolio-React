@@ -133,7 +133,7 @@ function DialpadCase(props) {
     return (
         <div className="container-fluid px-0 bg-white ">
 
-            <div className="bg-dialpad d-flex align-items-center justify-content-center text-white">
+            <div className="bg-dialpad d-flex align-items-center justify-content-center text-white py-5">
                 <AnimatedHeader
                     
                     subtitle="Dialpad"
@@ -254,7 +254,7 @@ function DialpadCase(props) {
             <section className="section-spacing bg-light-main text-white py-4">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12 text-center ">
+                        <div className="col-md-12 text-md-center text-left">
                             <h2 className="py-2 font-weight-bold section-title cs-section-title mb-4">The Solution</h2>
                             <p className=" font-weight-bolder  section-p cs-section-p">
                             Enhancing User Experience and Operational Efficiency
