@@ -20,7 +20,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 import NSLSVideo from "../../assets/videos/nsls-vid.mp4";
 import DialpadVideo from "../../assets/videos/dialpad-animated.mp4";
-import KoopidVideo from "../../assets/videos/koopid-animated.mp4";
+
 
 
 import ContactForm from "../ContactForm";
@@ -246,7 +246,7 @@ function Projects(props) {
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-16by9">
               <video className="video embed-responsive-item" muted autoPlay loop width="3840" height="2160">
-                <source src={NSLSVideo} type="video/webm" />
+                <source src={NSLSVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -269,11 +269,6 @@ function Projects(props) {
             chips={["UI Design", "UX Research", "Asset Creation", "Strategy", "User Testing", "Leadership", "Front End Development"]}
           />
 
-
-
-
-
-
         </div>
       </div>
 
@@ -282,7 +277,7 @@ function Projects(props) {
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-4by3">
               <video className="video embed-responsive-item" muted autoPlay loop width="3840" height="2160">
-                <source src={DialpadVideo} type="video/webm" />
+                <source src={DialpadVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
