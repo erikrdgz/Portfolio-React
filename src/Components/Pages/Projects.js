@@ -187,31 +187,61 @@ function Projects(props) {
   return (
 
     <>
-      <div className=" bg-main background text-center d-flex align-items-center justify-content-center home-header">
-        <div className="text-white p-3 px-md-5">
-          <div className="header-font px-md-5">
-            <h1>
-              {roleTrail.map((props, index) => (
-                <animated.div className="py-2" key={index} style={props}>
-                  <strong className="text-accent">{roles[index]}</strong>
-                </animated.div>
-              ))}</h1>
+    <div className="background pb-md-5">
+    <div className="  my-0 home-header  container-fluid">
+        <div className="text-center h-100 d-flex justify-content-center align-items-center"> 
+          <div className="text-white p-3 px-md-5 align-self-center">
+            <div className="header-font px-md-5">
+              <h1>
+                {roleTrail.map((props, index) => (
+                  <animated.div className="py-2" key={index} style={props}>
+                    <strong className="text-accent">{roles[index]}</strong>
+                  </animated.div>
+                ))}</h1>
+            </div>
+            {paragraphAnimation.map((props, index) => (
+              <animated.p key={index} className="header-subfont py-md-4 py-4" style={props}>
+                User driven design and data driven results.
+              </animated.p>
+            ))}
+            {mouseAnimation.map((props, index) => (
+              <animated.div key={index} className="field w-100 mt-5" style={props}>
+                <div className="mouse"></div>
+              </animated.div>
+            ))}
           </div>
-          {paragraphAnimation.map((props, index) => (
-            <animated.p key={index} className="header-subfont py-md-4 py-4" style={props}>
-              User driven design and data driven results.
-            </animated.p>
-          ))}
-          {mouseAnimation.map((props, index) => (
-            <animated.div key={index} className="field w-100 mt-5" style={props}>
-              <div className="mouse"></div>
-            </animated.div>
-          ))}
+          
+
         </div>
+       
+       
 
       </div>
+      <div className="container-fluid my-0 text-white">
+            <div className="row my-0">
+              <div className="col-6 text-left">
+                <div className="small-text">
+                  <p className="text-white my-0 small-text">9yrs of professional experience</p>
+                  <p className="text-white my-0 small-text">Web, Mobile, Tablet design</p>
+                  <p className="text-white my-0 small-text">Figma, Miro, Adobe CS</p>
+                  <p className="text-white small-text">React, Html, CSS, JS</p>
+                </div>
+              </div>
+              <div className="col-6 text-right">
+                <a href="mailto:erikrdgz2@gmail.com"><p className="text-white my-0 small-text">erikrdgz2@gmail.com</p></a>
+                <p className="text-white my-0 small-text">Denver, CO</p>
+                <p className="text-white my-0 small-text">Bilingual</p>
+                
+                  
+              </div>
+            </div>
+      </div>
 
-      <div className="bg-white  container-fluid p-lg-5">
+    </div>
+    
+   
+
+      <div className="bg-white container-fluid p-lg-5">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-16by9">
@@ -246,7 +276,8 @@ function Projects(props) {
 
         </div>
       </div>
-      <div className="bg-white  container-fluid p-md-5">
+
+      <div className="bg-white container-fluid p-md-5 border-top">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-4by3">
@@ -267,13 +298,13 @@ function Projects(props) {
             summary=" While collaborating with the Dialpad Design Team I crafted new features for their existing platform, contributed to the design system and enhanced user performance on a new vertical."
             linkText="View Case Study"
             linkUrl="/case-study/dialpad"
-            chips={["UI Design", "UX Research", "Asset Creation"]}
+            chips={["UI Design", "UX Research", "Asset Creation", "Strategy", "User Testing", "Leadership", "Front End Development", "Lead Integration", "Design System Management"]}
           />
 
 
         </div>
       </div>
-      <div className="bg-white  container-fluid p-md-5">
+      {/* <div className="bg-main text-white container-fluid p-md-5">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-4by3">
@@ -298,12 +329,12 @@ function Projects(props) {
 
 
         </div>
-      </div>
-      <div className="bg-light-main container-fluid p-md-5">
+      </div> */}
+      <div className="bg-light-main text-white container-fluid p-md-5">
         <TabSection tabData={tabData} />
       </div>
 
-      <div className=" container p-md-5">
+      <div className=" container-fluid bg-main text-white p-md-5">
         <ContactForm heading="Lets Chat" />
       </div>
 

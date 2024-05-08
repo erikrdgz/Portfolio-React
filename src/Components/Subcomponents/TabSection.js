@@ -15,7 +15,7 @@ const TabSection = ({ tabData }) => {
         onChange={handleTabChange} 
         indicatorColor="primary"
         variant="fullWidth"
-        className='font-weight-bolder'
+        className='font-weight-bolder text-white'
       >
         {tabData.map(({ name }, index) => (
           <Tab 
@@ -23,6 +23,7 @@ const TabSection = ({ tabData }) => {
             label={name} 
             sx={{
               fontWeight: 600, // Initial font-weight
+              color: activeTab === index ? 'white' : 'rgba(255,255,255,0.8)', // White font color for active tab, 50% white for inactive tabs
             }}
           />
         ))}
@@ -40,7 +41,6 @@ const TabSection = ({ tabData }) => {
               hidden={activeTab !== index}
               id={`tabpanel-${index}`}
               aria-labelledby={`tab-${index}`}
-              
             >
               <Box p={3}>
                 {content}

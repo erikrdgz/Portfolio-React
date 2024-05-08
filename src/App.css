@@ -4,8 +4,8 @@
   --light-bg: #fff;
   --section-color: #e6e6e6;
   --accent-1: #74F0ED;
-  --accent-2: #2a52be;
-  --accent-2-light: #f0f3fc;
+  --accent-2: #678fff;
+  --accent-2-light: #080808;
 }
 
 
@@ -66,6 +66,38 @@ body {
   height: 100vh;
 }
 
+.small-text{
+  font-size: 0.8rem;
+  font-weight: 400!important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white!important;
+}
+
+
+.bg-nsls{
+  background: url("./assets/images/Cases/nsls/nsls-big-pic.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 80vh;
+  background-position: 50% 100%;
+}
+
+.bg-nsls-color{
+  background-color: #7899CF;
+}
+
+.bg-dialpad{
+  background: url("./assets/images/Cases/dialpad/bg-dialpad-big-pic.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 80vh;
+ 
+}
 
 @media screen and (min-width: 1200px) {
   .logo-font {
@@ -107,7 +139,7 @@ body {
   }
 
   .home-header {
-    height: 85vh;
+    height: 80vh;
   }
 
 }
@@ -146,7 +178,7 @@ body {
   }
 
   .section-p{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -1295,7 +1327,10 @@ textarea:focus {
 
 .background {
   background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232C2C2C' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23555555'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("./assets/images/gauze-08.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .light-shadow {

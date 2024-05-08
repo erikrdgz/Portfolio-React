@@ -11,9 +11,9 @@ const AnimatedImage = ({ src, alt, className }) => {
 
   // Animation config for the image
   const imageAnimation = useSpring({
-    from: { transform: 'scale(0)' },
-    to: { transform: inView ? 'scale(1)' : 'scale(0)' },
-    config: { tension: 280, friction: 60 }
+    from: { transform: 'scale(0.9)', opacity: 0 },
+    to: { transform: inView ? 'scale(1)' : 'scale(0.9)', opacity: inView ? 1 : 0 },
+    config: { duration: 300 } // Adjust duration for softer animation
   });
 
   return (

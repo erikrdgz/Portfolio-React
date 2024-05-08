@@ -3,7 +3,7 @@ import { useTrail, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 
 const AnimatedList = ({ items, fontSize, iconClass, listClasses }) => {
-  const { ref, inView } = useInView({ triggerOnce: false, rootMargin: '-50px 0px' });
+  const { ref, inView } = useInView({ triggerOnce: true, rootMargin: '-50px 0px' });
   const listRef = useRef();
   const itemsLength = items.length;
 

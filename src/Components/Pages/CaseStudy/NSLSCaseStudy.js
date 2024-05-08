@@ -8,6 +8,27 @@ import '../../../App.css';
 //Image Imports
 import NSLSBanner from "../../../assets/images/Companies/Nsls-Banner-2.png";
 
+import frustrated from "../../../assets/images/Cases/nsls/frustrated.png";
+
+import discovery from "../../../assets/images/Cases/nsls/registratiuon-early-discovery.png";
+
+import wireframe from "../../../assets/images/Cases/nsls/wireframe.png";
+
+import dashboard from "../../../assets/images/Cases/nsls/nsls-dash.png";
+
+import appImages from "../../../assets/images/Cases/nsls/app-images.png";
+
+import courses from "../../../assets/images/Cases/nsls/courses.png";
+
+import courseProgress from "../../../assets/images/Cases/nsls/course-progress.png";
+
+import event from "../../../assets/images/Cases/nsls/event.png";
+
+
+import feed from "../../../assets/images/Cases/nsls/feed.png";
+
+
+
 //Icons Imports
 import { FiArrowRight } from 'react-icons/fi';
 import { FiAlertCircle } from "react-icons/fi";
@@ -43,7 +64,10 @@ function NSLSCase(props) {
         { text: 'User retention challenges', icon: FiAlertCircle },
         { text: 'Missed cross-promotion opportunities', icon: FiAlertCircle },
         { text: 'Increased development complexity', icon: FiAlertCircle },
-        { text: 'Negative impact on user perception', icon: FiAlertCircle }
+        { text: 'Negative impact on user perception', icon: FiAlertCircle },
+        { text: 'Overly complicated registration process', icon: FiAlertCircle },
+        { text: 'Lack of user location awareness', icon: FiAlertCircle },
+        { text: 'Lack of user communication hub', icon: FiAlertCircle }
     ];
 
     // Solutions for Unified Communication Channels
@@ -82,10 +106,10 @@ function NSLSCase(props) {
     ];
 
     const images = [
-        { src: NSLSBanner, alt: 'Banner', className: 'img-fluid w-100 rounded shadow' },
-        { src: NSLSBanner, alt: 'Banner', className: 'img-fluid w-100 rounded shadow' },
-        { src: NSLSBanner, alt: 'Banner', className: 'img-fluid w-100 rounded shadow' },
-        { src: NSLSBanner, alt: 'Banner', className: 'img-fluid w-100 rounded shadow' }
+        { src: courses, alt: 'Courses', className: 'img-fluid w-100 rounded shadow border' },
+        { src: courseProgress, alt: 'Course Progress', className: 'img-fluid w-100 rounded shadow border' },
+        { src: feed, alt: 'Feed', className: 'img-fluid w-100 rounded shadow border' },
+        { src: event, alt: 'Event', className: 'img-fluid w-100 rounded shadow border' }
     ];
 
 
@@ -93,63 +117,35 @@ function NSLSCase(props) {
 
 
     return (
-        <div className="container-fluid px-0">
+        <div className="container-fluid px-0 bg-white ">
 
-
-
-            {/* <header className="py-md-5 container">
-                <div className="row">
-                    <div className="col-12 text-center">
-                        <h2 className="text-main cs-position font-weight-bold">Senior Product Designer</h2>
-                        <h1 className="font-weight-bold cs-company section-title">National Society of Leadership and Success</h1>
-                        <p className="pt-4 pt-lg-5 col-md-8 mx-auto font-weight-bolder cs-brief">
-                            In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision.
-                        </p>
-                    </div>
-                </div>
-            </header> */}
-
-            <AnimatedHeader
-                title="Senior Product Designer"
-                subtitle="National Society of Leadership and Success"
-                description="In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision."
-            />
-
-
-
-            {/* <section className='col-md-7 mx-auto'>
-                <animated.img
-                    style={bannerAnimation}
-                    src={NSLSBanner}
-                    alt="Banner"
-                    className="img-fluid w-100 cs-big-image"
+            <div className="bg-nsls d-flex align-items-center justify-content-center text-white">
+                <AnimatedHeader
+                    
+                    subtitle="National Society of Leadership and Success"
+                    description="In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision."
+                    descriptionClassName="text-white"
                 />
-            </section> */}
+            </div>
+           
+
+
 
 
 
             <section className="container section-spacing ">
                 <div className="row">
                     <div className="col-md-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
-                        {/* <animated.img
-                            style={bannerAnimation}
-                            // src={NSLSBanner}
-                            src="https://placehold.co/500x400"
-                            alt="Banner"
-                            className="img-fluid w-100 rounded shadow cs-image mx-auto"
-                        /> */}
+      
 
                         <AnimatedImageGrow
-                            src={"https://placehold.co/500x400"}
+                            src={frustrated}
                             alt="Banner"
                             className="img-fluid w-100 rounded shadow"
                         />
                     </div>
                     <div className="col-md-6 order-1 order-md-2">
-                        {/* <h2 className="py-2 font-weight-bold section-title cs-section-title">The Problem</h2>
-                        <p className=" font-weight-bolder  section-p cs-section-p">
-                            NSLS faced a challenge when they opted for separate applications without ensuring a cohesive design across them. This fragmented approach led to inconsistency in user experience and brand representation, potentially causing confusion among users. By lacking a unified design language, NSLS risked diluting their brand identity and weakening the overall impact of their educational offerings on leadership.
-                        </p> */}
+     
                         <AnimatedTitleParagraph
                             title="The Problem"
                             paragraph=" NSLS faced a challenge when they opted for separate applications without ensuring a cohesive design across them. This fragmented approach led to inconsistency in user experience and brand representation, potentially causing confusion among users. By lacking a unified design language, NSLS risked diluting their brand identity and weakening the overall impact of their educational offerings on leadership."
@@ -161,7 +157,7 @@ function NSLSCase(props) {
             </section>
 
 
-            <section className="container-fluid section-spacing px-4">
+            <section className="container section-spacing px-4">
                 <div className="row">
                     <div className="col-md-4">
                         <div className="d-flex flex-row justify-content-between">
@@ -178,7 +174,7 @@ function NSLSCase(props) {
                     <div className="col-md-4 ">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Research</h3>
-                            {/* <FiArrowRight size={26} className="mt-3 text-main"/> */}
+                  
                         </div>
                         <p className=" font-weight-bolder  section-p cs-section-p">
                             During the research phase, I embarked on a journey through market analysis, user interviews, and competitor snooping to uncover NSLS's struggle with scattered design across applications. Armed with user quirks and behavior insights, I pinpointed specific pain points and areas ripe for a design makeover. Through rounds of playful testing and validation, I polished these insights, ensuring our design revamp not only met user needs but also injected some excitement into NSLS's mission.
@@ -189,7 +185,7 @@ function NSLSCase(props) {
                     <div className="col-md-4 d-flex justify-content-end align-items-center  py-3">
                         <animated.img
                             style={bannerAnimation}
-                            src={NSLSBanner}
+                            src={discovery}
                             alt="Banner"
                             className="img-fluid w-100 rounded shadow cs-image"
                         />
@@ -223,14 +219,14 @@ function NSLSCase(props) {
                         <div className="col-md-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
 
                             <AnimatedImageGrow
-                                src={NSLSBanner}
+                                src={wireframe}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow"
                             />
                         </div>
-                        <div className="col-12 order-3 py-3">
+                        <div className="col-12 order-3 py-3 my-md-5">
                             <AnimatedImageGrow
-                                src={NSLSBanner}
+                                src={dashboard}
                                 alt="Banner"
                                 className="img-fluid w-100 rounded shadow"
                             />
@@ -241,7 +237,7 @@ function NSLSCase(props) {
 
             </section>
 
-            <section className="section-spacing bg-light-main">
+            <section className="section-spacing bg-light-main text-white py-4">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center ">
@@ -254,21 +250,21 @@ function NSLSCase(props) {
 
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container-fluid ">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-3 my-5">
                             <h5 className='font-weight-bolder'>Unified Communication Channels</h5>
                             <AnimatedList items={communicationSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 my-5">
                             <h5 className='font-weight-bolder'>Engaging Virtual Environments</h5>
                             <AnimatedList items={virtualEnvironmentSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 my-5">
                             <h5 className='font-weight-bolder'>Cohesive Team Collaboration</h5>
                             <AnimatedList items={teamCollaborationSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3">
+                        <div className="col-md-3 my-5">
                             <h5 className='font-weight-bolder'>Streamlined Resource Access</h5>
                             <AnimatedList items={resourceAccessSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
@@ -282,23 +278,15 @@ function NSLSCase(props) {
             <section className="container section-spacing ">
                 <div className="row">
                     <div className="col-md-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
-                        {/* <animated.img
-                            style={bannerAnimation}
-                            src={NSLSBanner}
-                            alt="Banner"
-                            className="img-fluid w-100 rounded shadow"
-                        /> */}
+         
                         <AnimatedImageGrow
-                            src={NSLSBanner}
+                            src={appImages}
                             alt="Banner"
                             className="img-fluid w-100 rounded shadow"
                         />
                     </div>
                     <div className="col-md-6 order-1 order-md-2">
-                        {/* <h2 className="py-2 font-weight-bold section-title">Cohesive Design</h2>
-                        <p className=" font-weight-bolder  section-p">
-                            In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision.
-                        </p> */}
+         
                         <AnimatedTitleParagraph
                             title="Cohesive Design"
                             paragraph="
@@ -306,69 +294,34 @@ function NSLSCase(props) {
                         />
                         <AnimatedList items={designList} fontSize="0.85rem" />
                     </div>
-                    {/* <div className="col-12 row order-3">
-                        <div className="col-md-3">
-                            <animated.img
-                                style={bannerAnimation}
-                                src={NSLSBanner}
-                                alt="Banner"
-                                className="img-fluid w-100 rounded shadow"
-                            />
-                        </div>
-                        <div className="col-md-3">
-                            <animated.img
-                                style={bannerAnimation}
-                                src={NSLSBanner}
-                                alt="Banner"
-                                className="img-fluid w-100 rounded shadow"
-                            />
-                        </div>
-                        <div className="col-md-3">
-                            <animated.img
-                                style={bannerAnimation}
-                                src={NSLSBanner}
-                                alt="Banner"
-                                className="img-fluid w-100 rounded shadow"
-                            />
-                        </div>
-                        <div className="col-md-3">
-                            <animated.img
-                                style={bannerAnimation}
-                                src={NSLSBanner}
-                                alt="Banner"
-                                className="img-fluid w-100 rounded shadow"
-                            />
-                        </div>
-                    </div> */}
+            
                     <AnimatedImageColumn images={images} />
                 </div>
 
             </section>
 
             <section className="container section-spacing text-center">
-                {/* <h2 className="py-2 font-weight-bold section-title">Title</h2>
-                <p className=" font-weight-bolder  section-p col-md-7 mx-auto">
-                    In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision.
-                </p> */}
+  
 
-                <AnimatedTitleParagraph title="Title" paragraph=" In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision." />
+                <AnimatedTitleParagraph title="Testing Results" paragraph="
+After meticulous implementation of the design changes through numerous iterative cycles, our efforts yielded profound insights. While there were some challenges in timelines we effictively implemented all changes. Here's what we uncovered:" />
 
                 <div className="row py-md-4">
                     <div className="col-md-3 col-6">
-                        <AnimatedNumber number={90} />
+                        <AnimatedNumber number={87} text={"Increase in user retention"}/>
                     </div>
                     <div className="col-md-3 col-6">
-                        <AnimatedNumber number={63} />
+                        <AnimatedNumber number={34} text={"Decrease in registration process"} />
                     </div>
                     <div className="col-md-3 col-6">
-                        <AnimatedNumber number={20} />
+                        <AnimatedNumber number={67} text={"Increase in overall user sentiment"} />
                     </div>
                     <div className="col-md-3 col-6">
-                        <AnimatedNumber number={60} />
+                        <AnimatedNumber number={93} text={"Increase in user location awareness"}/>
                     </div>
                 </div>
             </section>
-            <section className=" container-fluid section-spacing bg-light-main">
+            <section className=" container-fluid section-spacing bg-light-main text-white">
                 <ContactForm heading="More questions? Let's chat." />
 
             </section>

@@ -14,7 +14,7 @@ const AnimatedImageColumn = ({ images }) => {
   return (
     <div className="col-12 row order-3" ref={ref}>
       {trail.map((style, index) => (
-        <div key={index} className="col-md-3">
+        <div key={index} className="col-md-3 my-3">
           <animated.img
             style={style}
             src={images[index].src}

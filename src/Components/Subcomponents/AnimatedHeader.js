@@ -2,10 +2,10 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 
-const AnimatedHeader = ({ title, subtitle, description }) => {
+const AnimatedHeader = ({ title, subtitle, description, descriptionClassName }) => {
   // UseInView hook to detect when the component is in view
   const { ref, inView } = useInView({
-    triggerOnce: false, // Only trigger once
+    triggerOnce: true, // Only trigger once
     threshold: 0.6, // Trigger animation when at least 50% of the component is in view
   });
 
@@ -41,7 +41,7 @@ const AnimatedHeader = ({ title, subtitle, description }) => {
           <animated.h1 className="font-weight-bold cs-company section-title" style={subtitleAnimation}>
             {subtitle}
           </animated.h1>
-          <animated.p className="pt-4 pt-lg-5 col-md-8 mx-auto font-weight-bolder cs-brief" style={descriptionAnimation}>
+          <animated.p className={`pt-4 pt-lg-5 col-md-8 mx-auto font-weight-bolder cs-brief ${descriptionClassName}`} style={descriptionAnimation}>
             {description}
           </animated.p>
         </div>

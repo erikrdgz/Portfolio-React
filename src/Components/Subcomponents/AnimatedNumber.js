@@ -2,7 +2,7 @@ import React from 'react';
 import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 
-const AnimatedNumber = ({ number }) => {
+const AnimatedNumber = ({ number, text }) => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   const numberAnimation = useSpring({
@@ -20,7 +20,7 @@ const AnimatedNumber = ({ number }) => {
   return (
     <div ref={ref}>
       <animated.h3 className="text-main font-weight-bold">{numberAnimation.number.interpolate(value => `${value.toFixed()}%`)}</animated.h3>
-      <animated.p style={paragraphAnimation}>Some text underneath</animated.p>
+      <animated.p style={paragraphAnimation}>{text}</animated.p>
     </div>
   );
 };
