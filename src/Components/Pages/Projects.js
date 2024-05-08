@@ -21,7 +21,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 // import NSLSVideo from "../../assets/videos/nsls-vid.mp4";
 // import DialpadVideo from "../../assets/videos/dialpad-animated.mp4";
 
-
+import ReactPlayer from 'react-player';
 
 import ContactForm from "../ContactForm";
 
@@ -248,14 +248,27 @@ function Projects(props) {
       <div className="bg-white container-fluid p-lg-5">
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
-            <div className="video-container embed-responsive embed-responsive-16by9">
+            {/* <div className="video-container embed-responsive embed-responsive-16by9">
               <video className="video embed-responsive-item" muted autoPlay loop width="3840" height="2160">
                 <source src={NSLSVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-            </div>
+            </div> */}
+               <div className="video-wrapper">
+                <ReactPlayer
+                  url={NSLSVideo} // Replace with your video URL
+                  width="100%"
+                  height="100%"
+                   // Display native video controls (play, pause, etc.)
+                  playing // Automatically start playing the video
+                  loop // Loop the video when it ends
+                  muted // Mute the video
+                />
+              </div>
+
           </div>
 
+       
 
 
 
