@@ -18,8 +18,8 @@ import Techtonic from "../../assets/images/Companies/techtonic-logo.png";
 import TabSection from "../Subcomponents/TabSection.js";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-import NSLSVideo from "../../assets/videos/nsls-vid.mp4";
-import DialpadVideo from "../../assets/videos/dialpad-animated.mp4";
+// import NSLSVideo from "../../assets/videos/nsls-vid.mp4";
+// import DialpadVideo from "../../assets/videos/dialpad-animated.mp4";
 
 
 
@@ -182,6 +182,10 @@ function Projects(props) {
     config: { tension: 100, friction: 20 },
     delay: 2000,
   });
+
+  const NSLSVideo = require("../../assets/videos/nsls-vid.mp4") ;
+
+  const DialpadVideo =require( "../../assets/videos/dialpad-animated.mp4");
 
 
   return (
