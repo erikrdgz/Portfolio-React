@@ -152,7 +152,7 @@ function DialpadCase(props) {
                     <div className="col-md-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
                         <div className="video-container embed-responsive embed-responsive-4by3">
                             <video className="video embed-responsive-item" muted autoPlay loop playsInline>
-                                    <source src={koopidToDialpad} type="video/webm" />
+                                    <source src={koopidToDialpad} type="video/mp4" />
                             Your browser does not support the video tag.
                             </video>
                         </div>
