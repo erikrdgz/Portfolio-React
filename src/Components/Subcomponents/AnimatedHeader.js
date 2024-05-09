@@ -34,11 +34,11 @@ const AnimatedHeader = ({ title, subtitle, description, descriptionClassName }) 
   return (
     <header className="py-md-5 container" ref={ref}>
       <div className="row">
-        <div className="col-12 text-center">
-          <animated.h2 className="text-main cs-position font-weight-bold" style={titleAnimation}>
+        <div className="col-12 text-md-center text-left">
+          <animated.h2 className="text-main cs-position font-weight-bold " style={titleAnimation}>
             {title}
           </animated.h2>
-          <animated.h1 className="font-weight-bold cs-company section-title" style={subtitleAnimation}>
+          <animated.h1 className="font-weight-bold cs-company section-title col-12" style={subtitleAnimation}>
             {subtitle}
           </animated.h1>
           <animated.p className={`pt-4 pt-lg-5 col-md-8 mx-auto font-weight-bolder cs-brief ${descriptionClassName}`} style={descriptionAnimation}>

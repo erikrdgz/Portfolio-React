@@ -24,6 +24,10 @@ const TabSection = ({ tabData }) => {
             sx={{
               fontWeight: 600, // Initial font-weight
               color: activeTab === index ? 'white' : 'rgba(255,255,255,0.8)', // White font color for active tab, 50% white for inactive tabs
+              fontSize: 'inherit', // Set font size to inherit from parent
+              '@media (max-width: 768px)': { // Apply styles for screens smaller than 768px (mobile)
+                fontSize: '0.7rem', // Set smaller font size for mobile
+              },
             }}
           />
         ))}

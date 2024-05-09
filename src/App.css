@@ -63,7 +63,7 @@ body {
 }
 
 .home-header{
-  height: 100vh;
+  height: unset;
 }
 
 .small-text{
@@ -75,7 +75,17 @@ body {
   color: white!important;
 }
 
+.dropdown-menu {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out;
+  overflow: hidden;
+}
 
+.dropdown-menu.show {
+  opacity: 1;
+  max-height: 500px; /* Adjust this value to fit your dropdown content */
+}
 .bg-nsls{
   background: url("./assets/images/Cases/nsls/nsls-big-pic.png");
   background-size: cover;

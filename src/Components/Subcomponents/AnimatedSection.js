@@ -15,7 +15,7 @@ const AnimatedSection = ({ title, subtitle, summary, linkText, linkUrl, chips })
   const trail = useTrail(trailLength, {
     from: { opacity: 0, transform: isMobile ? 'translateX(0)' : 'translateX(-50px)' },
     to: { opacity: inView ? 1 : 0, transform: inView ? 'translateX(0)' : 'translateX(-50px)' },
-    config: { tension: 100, friction: 20 },
+    config: { tension: 250, friction: 20 },
    
   });
 

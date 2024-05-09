@@ -162,7 +162,7 @@ function NSLSCase(props) {
                     <div className="col-md-4">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Discovery</h3>
-                            <FiArrowRight size={26} className="mt-3 text-main" />
+                            <FiArrowRight size={26} className="mt-3 text-main d-none d-md-block" />
                         </div>
 
                         <p className=" font-weight-bolder  section-p cs-section-p">
@@ -300,10 +300,10 @@ function NSLSCase(props) {
 
             </section>
 
-            <section className="container section-spacing text-center">
+            <section className="container section-spacing text-md-center text-left">
   
-
-                <AnimatedTitleParagraph title="Testing Results" paragraph="
+            <div className="col-12">
+            <AnimatedTitleParagraph title="Testing Results" paragraph="
 After meticulous implementation of the design changes through numerous iterative cycles, our efforts yielded profound insights. While there were some challenges in timelines we effictively implemented all changes. Here's what we uncovered:" />
 
                 <div className="row py-md-4">
@@ -320,7 +320,11 @@ After meticulous implementation of the design changes through numerous iterative
                         <AnimatedNumber number={93} text={"Increase in user location awareness"}/>
                     </div>
                 </div>
+            </div>
+                
             </section>
+
+
             <section className=" container-fluid section-spacing bg-light-main text-white">
                 <ContactForm heading="More questions? Let's chat." />
 

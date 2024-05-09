@@ -40,8 +40,8 @@ function UIDesigns(props) {
     <div className="container mt-4">
       <header className="">
         <div className="row">
-          <div className="col-12  text-center">
-            <h1>Designs</h1>
+          <div className="col-12 text-left text-md-center">
+            <h1 className="col-12">Designs</h1>
             <p className="py-4 py-lg-5 col-md-8 mx-auto">Consistent daily practice in product and UI design is paramount for honing skills and maintaining a cutting-edge approach. It allows designers to stay attuned to evolving trends, experiment with innovative concepts, and refine their craft through hands-on experience. This habitual commitment not only fosters creative growth but also ensures designers are well-equipped to address the ever-changing landscape of user expectations and design standards.</p>
           </div>
         </div>
