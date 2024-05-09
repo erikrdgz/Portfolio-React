@@ -16,7 +16,7 @@ const AnimatedSection = ({ title, subtitle, summary, linkText, linkUrl, chips })
     from: { opacity: 0, transform: isMobile ? 'translateX(0)' : 'translateX(-50px)' },
     to: { opacity: inView ? 1 : 0, transform: inView ? 'translateX(0)' : 'translateX(-50px)' },
     config: { tension: 100, friction: 20 },
-    delay: inView ? 200 : 0, // Delay initial animation until element is in view
+   
   });
 
   return (

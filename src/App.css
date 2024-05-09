@@ -81,7 +81,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 80vh;
+  height: unset;
   background-position: 50% 100%;
 }
 
@@ -95,7 +95,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 80vh;
+  height: unset;
  
 }
 
@@ -157,6 +157,29 @@ body {
   .header-subfont {
     font-size: 2.2rem;
     font-weight: 100;
+  }
+
+  .bg-nsls{
+    background: url("./assets/images/Cases/nsls/nsls-big-pic.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    background-position: 50% 100%;
+  }
+  
+  .bg-nsls-color{
+    background-color: #7899CF;
+  }
+  
+  .bg-dialpad{
+    background: url("./assets/images/Cases/dialpad/bg-dialpad-big-pic.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+   
   }
 
 
@@ -1399,4 +1422,30 @@ textarea {
 
 .submit-btn:hover {
   background-color: var(--accent-2);
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Video element */
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the entire container */
+}
+
+/* Hide default media controls on WebKit-based browsers (e.g., Safari, Chrome) */
+.video::-webkit-media-controls {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-enclosure {
+  display: none !important;
+}
+
+.video::-webkit-media-controls-panel {
+  display: none !important;
 }

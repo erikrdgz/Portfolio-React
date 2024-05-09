@@ -247,10 +247,12 @@ function Projects(props) {
 
       <div className="bg-white container-fluid p-lg-5">
         <div className="row">
+
+
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-16by9">
-              <video className="video embed-responsive-item" muted autoPlay loop width="3840" height="2160">
-                <source src="https://youtu.be/4c98F9QOymg" type="video/mp4" />
+              <video className="video embed-responsive-item" muted autoPlay loop playsInline >
+                <source src={NSLSVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -282,7 +284,7 @@ function Projects(props) {
         <div className="row">
           <div className="col-lg-6 p-2 p-md-5">
             <div className="video-container embed-responsive embed-responsive-4by3">
-              <video className="video embed-responsive-item" muted autoPlay loop width="3840" height="2160">
+              <video className="video embed-responsive-item" muted autoPlay loop playsInline >
                 <source src={DialpadVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
