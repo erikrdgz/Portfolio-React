@@ -159,7 +159,7 @@ function NSLSCase(props) {
 
             <section className="container section-spacing px-4">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-6 col-lg-6">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Discovery</h3>
                             <FiArrowRight size={26} className="mt-3 text-main d-none d-md-block" />
@@ -171,7 +171,7 @@ function NSLSCase(props) {
 
                     </div>
 
-                    <div className="col-md-4 ">
+                    <div className="col-md-6 col-lg-6">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Research</h3>
                   
@@ -182,7 +182,7 @@ function NSLSCase(props) {
 
                     </div>
 
-                    <div className="col-md-4 d-flex justify-content-end align-items-center  py-3">
+                    <div className="col-md-12 d-flex justify-content-end align-items-center  py-3">
                         <animated.img
                             style={bannerAnimation}
                             src={discovery}
