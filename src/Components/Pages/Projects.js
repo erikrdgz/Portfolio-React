@@ -25,6 +25,8 @@ import ReactPlayer from 'react-player';
 
 import ContactForm from "../ContactForm";
 
+import erik from "../../assets/images/Cases/erik-bw 1.png"
+
 function Projects(props) {
   const items = [
     { image: NSLS, bgColor: "#121D2F", bgColor2: "#19456D", title: "Senior Product Designer", category: "ED Tech", link: "/projects/nsls" },
@@ -191,36 +193,66 @@ function Projects(props) {
   return (
 
     <>
-    <div className="background pb-md-5">
-    <div className="  my-0 home-header  container-fluid">
-        <div className="text-center h-100 d-flex justify-content-center align-items-center"> 
-          <div className="text-white p-3 px-md-5 align-self-center">
-            <div className="header-font px-md-5">
-              <h1>
-                {roleTrail.map((props, index) => (
-                  <animated.div className="py-2" key={index} style={props}>
-                    <strong className="text-accent">{roles[index]}</strong>
-                  </animated.div>
-                ))}</h1>
+      <div className="bg-black ">
+
+
+        {/* <div className="  my-0 home-header  container-fluid">
+          <div className="text-center h-100 d-flex justify-content-center align-items-center">
+            <div className="text-white p-3 px-md-5 align-self-center">
+              <div className="header-font px-md-5">
+                <h1>
+                  {roleTrail.map((props, index) => (
+                    <animated.div className="py-2" key={index} style={props}>
+                      <strong className="text-accent">{roles[index]}</strong>
+                    </animated.div>
+                  ))}</h1>
+              </div>
+              {paragraphAnimation.map((props, index) => (
+                <animated.p key={index} className="header-subfont py-md-4 py-4" style={props}>
+                  User driven design and data driven results.
+                </animated.p>
+              ))}
+              {mouseAnimation.map((props, index) => (
+                <animated.div key={index} className="field w-100 mt-5" style={props}>
+                  <div className="mouse"></div>
+                </animated.div>
+              ))}
             </div>
-            {paragraphAnimation.map((props, index) => (
-              <animated.p key={index} className="header-subfont py-md-4 py-4" style={props}>
-                User driven design and data driven results.
-              </animated.p>
-            ))}
-            {mouseAnimation.map((props, index) => (
-              <animated.div key={index} className="field w-100 mt-5" style={props}>
-                <div className="mouse"></div>
-              </animated.div>
-            ))}
+
+
           </div>
-          
 
+
+
+        </div> */}
+
+
+        <div className="container  py-4 py-md-0">
+          <div className="row my-0">
+            <div className="col-md-6 ">
+              <h1 className="title text-white">
+                Hi, I'm Erik
+              </h1>
+              <p className="sub-header text-white">
+              Lead product designer, developer, and technologist
+with a passion in creating human centered products that bring people together.
+              </p>
+              <a href="" className="header-btn d-block mt-2 mt-md-5 text-white  ">Message Me</a>
+            </div>
+
+
+            <div className="col-md-6 text-right my-4 my-md-0">
+              <div className="img-height">
+               <img src={erik} alt="Me" class="img-fluid erik-pic"/>
+              </div>
+             
+            </div>
+          </div>
         </div>
-       
-       
 
-      </div>
+
+
+{/*       
       <div className="container-fluid my-0 text-white">
             <div className="row my-0">
               <div className="col-6 text-left">
@@ -239,7 +271,7 @@ function Projects(props) {
                   
               </div>
             </div>
-      </div>
+      </div> */}
 
     </div>
     

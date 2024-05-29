@@ -49,6 +49,10 @@ body {
 
 }
 
+.bg-black{
+  background: black;
+}
+
 .summary {
   font-weight: 400;
 
@@ -63,8 +67,9 @@ body {
 }
 
 .home-header{
-  height: unset;
+  min-height: unset;
 }
+
 
 .small-text{
   font-size: 0.8rem;
@@ -108,8 +113,31 @@ body {
   height: unset;
  
 }
+.header-btn{
+  font-weight:900;
+  color: var(--accent-2)!important;
+}
+
+
 
 @media screen and (min-width: 1200px) {
+
+
+  .erik-pic{
+    max-height: 900px;
+  }
+  
+  .title{
+    font-size: 4rem;
+  }
+  
+ 
+  .sub-header{
+    font-size: 1rem;
+  }
+  
+
+
   .logo-font {
     font-weight: 700 !important;
     text-decoration: none;
@@ -147,11 +175,32 @@ body {
     font-weight: 400;
     font-size: 1.2rem;
   }
-
+/* 
   .home-header {
-    height: 80vh;
-  }
+    min-height: 80vh;
+  } */
 
+}
+
+@media screen and (min-width: 2000px) {
+
+  .erik-pic{
+    max-height: 900px;
+  }
+  
+  .title{
+    font-size: 10rem;
+  }
+  
+  .header-btn{
+    font-weight:900;
+    color: var(--accent-2)!important;
+  }
+  
+  .sub-header{
+    font-size: 2rem;
+  }
+  
 }
 
 

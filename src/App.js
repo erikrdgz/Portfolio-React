@@ -173,7 +173,7 @@ function App() {
           </div>
         </nav> */}
 
-<nav className="navbar navbar-expand-lg navbar-dark bg-main py-lg-5 mt-md-0 shadow-menu sticky-top">
+<nav className="navbar navbar-expand-lg navbar-dark bg-main mt-md-0 shadow-menu sticky-top">
       <div className="icons d-md-none mb-3">
         <a href="https://github.com/erikrdgz" target="_blank" className="mx-1 text-white ">
           <FontAwesomeIcon icon={faGithub} />
