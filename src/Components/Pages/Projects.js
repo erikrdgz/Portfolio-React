@@ -227,7 +227,7 @@ function Projects(props) {
         </div> */}
 
 
-        <div className="container  py-4 py-md-0">
+        <div className="container  py-0 py-md-0">
           <div className="row my-0">
             <div className="col-md-6 ">
               <h1 className="title text-white">
@@ -241,7 +241,7 @@ with a passion in creating human centered products that bring people together.
             </div>
 
 
-            <div className="col-md-6 text-right my-4 my-md-0">
+            <div className="col-md-6 text-right  mb-0">
               <div className="img-height">
                <img src={erik} alt="Me" class="img-fluid erik-pic"/>
               </div>
