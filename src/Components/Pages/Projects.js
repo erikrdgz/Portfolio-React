@@ -9,6 +9,8 @@ import AnimatedSection from "../Subcomponents/AnimatedSection.js";
 import AnimatedList from "../Subcomponents/AnimatedList.js";
 import AnimatedTitleParagraph from "../Subcomponents/AnimatedTitleParagraph.js";
 
+import HeroBanner from "../Subcomponents/HeroBanner.js";
+
 import NSLS from "../../assets/images/Companies/Nsls-Banner-2.png";
 import IFCC from "../../assets/images/Companies/ifcc-logo.png";
 import Dialpad from "../../assets/images/Companies/dialpad-ai-logo.png";
@@ -227,7 +229,7 @@ function Projects(props) {
         </div> */}
 
 
-        <div className="container  py-0 py-md-0">
+        {/* <div className="container  py-0 py-md-0">
           <div className="row my-0">
             <div className="col-md-6 ">
               <h1 className="title text-white">
@@ -237,7 +239,7 @@ function Projects(props) {
               Lead product designer, developer, and technologist
 with a passion in creating human centered products that bring people together.
               </p>
-              <a href="" className="header-btn d-block mt-2 mt-md-5 text-white  ">Message Me</a>
+              <a href="mailto:erikrdgz2@gmail.com" className="submit-btn d-block btn col-4 mt-2 mt-md-5 text-white  ">Message Me</a>
             </div>
 
 
@@ -248,8 +250,8 @@ with a passion in creating human centered products that bring people together.
              
             </div>
           </div>
-        </div>
-
+        </div> */}
+  <HeroBanner/>
 
 
 {/*       
