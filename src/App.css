@@ -50,7 +50,7 @@ body {
 }
 
 .bg-black{
-  background: black;
+  background: #000!important;
 }
 
 .summary {
@@ -61,6 +61,11 @@ body {
 .bg-light-main{
   background: var(--accent-2-light);
 }
+
+.light-white{
+  color: #cccccc;
+}
+
 
 .bg-none{
   background: none!important;
@@ -137,7 +142,6 @@ body {
   }
   
 
-
   .logo-font {
     font-weight: 700 !important;
     text-decoration: none;
@@ -204,7 +208,6 @@ body {
 }
 
 
-
 @media screen and (min-width: 1440px) {
 
 
@@ -261,6 +264,7 @@ body {
 
   .section-p{
     font-size: 1rem;
+    color: #ccc!important;
   }
 }
 
@@ -1507,4 +1511,68 @@ textarea {
 
 .video::-webkit-media-controls-panel {
   display: none !important;
+}
+
+
+
+
+
+
+
+.contact-form-container {
+  color: #fff; /* White text for container */
+}
+
+.contact-form-container .project-name {
+  color: #fff; /* White text for heading */
+}
+
+.contact-form-container .thank-you-message {
+  color: #fff; /* White text for thank you message */
+}
+
+.contact-form {
+  color: #fff; /* White text for form */
+  border: none; /* Remove default card border */
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #fff; /* White text for labels */
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: transparent; /* Transparent background */
+  color: #fff; /* White text */
+  border: none;
+  border-bottom: 1px solid #fff; /* White underline */
+  padding: 0.5rem 0;
+  width: 100%;
+  outline: none;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+
+
+.contact-form .submit-btn:hover {
+  background-color: #f0f0f0;
+  color: #000;
 }
