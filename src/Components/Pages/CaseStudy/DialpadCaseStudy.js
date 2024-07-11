@@ -55,6 +55,7 @@ import AnimatedTitleParagraph from '../../Subcomponents/AnimatedTitleParagraph';
 import AnimatedImageGrow from '../../Subcomponents/AnimatedImageGrow';
 import AnimatedImageColumn from '../../Subcomponents/AnimatedImageColumn';
 import AnimatedNumber from '../../Subcomponents/AnimatedNumber';
+import AnimatedFloatUp from '../../Subcomponents/AnimatedFloatUp';
 
 //Contact Import
 import ContactForm from "../../ContactForm";
@@ -147,9 +148,9 @@ function DialpadCase(props) {
 
 
 
-            <section className="container section-spacing ">
+            <section className="container-fluid section-spacing ">
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
+                    <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
                         <div className="video-container embed-responsive embed-responsive-4by3">
                             <video className="video embed-responsive-item" muted autoPlay loop playsInline>
                                     <source src={koopidToDialpad} type="video/mp4" />
@@ -157,7 +158,7 @@ function DialpadCase(props) {
                             </video>
                         </div>
                     </div>
-                    <div className="col-md-6 order-1 order-md-2">
+                    <div className="col-md-12 col-lg-6 order-1 order-md-2">
      
                         <AnimatedTitleParagraph
                             title="Key Player in Implementing Koopid AI Integration at Dialpad"
@@ -170,9 +171,9 @@ function DialpadCase(props) {
             </section>
 
 
-            <section className="container section-spacing px-4">
+            <section className="container-fluid section-spacing px-4">
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-6 col-lg-4">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Integration Process</h3>
                             <FiArrowRight size={26} className="mt-3 text-main d-none d-md-block" />
@@ -184,7 +185,7 @@ function DialpadCase(props) {
 
                     </div>
 
-                    <div className="col-md-4 ">
+                    <div className="col-md-6 col-lg-4 ">
                         <div className="d-flex flex-row justify-content-between">
                             <h3 className="py-2 font-weight-bold ">Design System</h3>
                   
@@ -195,7 +196,7 @@ function DialpadCase(props) {
 
                     </div>
 
-                    <div className="col-md-4 d-flex justify-content-end align-items-center  py-3">
+                    <div className="col-md-12 col-lg-4 d-flex justify-content-end align-items-center  py-3">
                         <animated.img
                             style={bannerAnimation}
                             src={discovery}
@@ -208,19 +209,19 @@ function DialpadCase(props) {
 
 
             </section>
-            <div className="col-12 bg -white d-flex justify-content-center py-3">
+            {/* <div className="col-12 bg -white d-flex justify-content-center py-3">
                 <div>
                     <FiChevronDown size={36} className='text-main' />
                 </div>
 
-            </div>
+            </div> */}
 
             <section className="section-spacing ">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6 order-2 order-md-1">
-                            <h3 className="py-2 font-weight-bold text-main">Talking To Customers</h3>
-                            <h2 className="py-2 font-weight-bold section-title cs-section-title mb-4">Pain point identification and feature creation</h2>
+                        <div className="col-md-12 col-lg-6 order-2 order-md-1">
+                            <h2 className="py-2 font-weight-bold text-main">Talking To Customers</h2>
+                            <h3 className="py-2 font-weight-bold section-title cs-section-title mb-4">Pain point identification and feature creation</h3>
                             <p className=" font-weight-bolder  section-p cs-section-p">
                                 Speaking with agents and customers alike allowed me to create user specific features that resolved many pain points our users had. We used severak KPI's such as user retention, time on task, sentiment analysis and more to better understand our users and collaborate with project managers to prioritize features.
 
@@ -230,7 +231,7 @@ function DialpadCase(props) {
                             </p>
 
                         </div>
-                        <div className="col-md-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
+                        <div className="col-md-12 col-lg-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
 
                             <AnimatedImageGrow
                                 src={cohesive}
@@ -238,14 +239,17 @@ function DialpadCase(props) {
                                 className="img-fluid w-100 "
                             />
                         </div>
-                        <div className="col-12 order-3 py-3 my-md-5">
+                       
+                    </div>
+                </div>
+                <div className="container">
+                <div className="col-12 order-3 py-3 my-md-5">
                             <AnimatedImageGrow
                                 src={suggestions}
                                 alt="Banner"
                                 className="img-fluid w-100  "
                             />
                         </div>
-                    </div>
                 </div>
 
 
@@ -266,19 +270,19 @@ function DialpadCase(props) {
                 </div>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Updated Design Systems</h5>
                             <AnimatedList items={communicationSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Creation of Reusable Components</h5>
                             <AnimatedList items={virtualEnvironmentSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Collaboration with Developers and Project Managers</h5>
                             <AnimatedList items={teamCollaborationSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Improved User Retention Strategies</h5>
                             <AnimatedList items={resourceAccessSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
@@ -289,9 +293,9 @@ function DialpadCase(props) {
             </section>
 
 
-            <section className="container section-spacing ">
+            <section className="container-fluid section-spacing ">
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
+                    <div className="col-md-12 col-lg-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
          
                         <AnimatedImageGrow
                             src={appImages}
@@ -299,7 +303,7 @@ function DialpadCase(props) {
                             className="img-fluid w-100 rounded shadow"
                         />
                     </div>
-                    <div className="col-md-6 order-1 order-md-2">
+                    <div className="col-md-12 col-lg-6 order-1 order-md-2">
          
                         <AnimatedTitleParagraph
                             title="Design Rollout and Testing"
@@ -322,7 +326,7 @@ After meticulous implementation of the design changes through numerous iterative
 
                 <div className="row py-md-4">
                     <div className="col-md-3 col-6">
-                        <AnimatedNumber number={110} text={"Efficiency in time to market"}/>
+                        <AnimatedNumber number={74} text={"Efficiency in time to market"}/>
                     </div>
                     <div className="col-md-3 col-6">
                         <AnimatedNumber number={48.3} text={"Decrease in time on task"} />

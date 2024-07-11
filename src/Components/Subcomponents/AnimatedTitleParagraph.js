@@ -23,8 +23,8 @@ const AnimatedTitleParagraph = ({ title, paragraph }) => {
 
   return (
     <div ref={ref}>
-      <animated.h2 className="py-2 font-weight-bold section-title" style={titleAnimation}>{title}</animated.h2>
-      <animated.p className="font-weight-bolder section-dark-p" style={paragraphAnimation}>{paragraph}</animated.p>
+      <animated.h4 className="py-2 font-weight-bold section-title" style={titleAnimation}>{title}</animated.h4>
+      <animated.p className="font-weight-bolde section-dark-p" style={paragraphAnimation}>{paragraph}</animated.p>
     </div>
   );
 };

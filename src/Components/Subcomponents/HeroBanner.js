@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
+import { Button } from '@mui/material';
 import erik from '../../assets/images/Cases/erik-bw 1.png'; // Make sure to replace this with the correct path to your image
 
 const HeroBanner = () => {
@@ -12,22 +13,22 @@ const HeroBanner = () => {
   
   // Enhanced animations for mobile and web
   const h1Spring = useSpring({
-    from: { opacity: 0, transform: 'translateY(-40px) scale(0.9) rotate(-3deg)' },
-    to: { opacity: 1, transform: 'translateY(0px) scale(1) rotate(0deg)' },
+    from: { opacity: 0, transform: 'translateY(40px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
     config: baseSpringConfig,
     delay: fadeInDelay,
   });
 
   const pSpring = useSpring({
-    from: { opacity: 0, transform: 'translateX(-20px)' },
-    to: { opacity: 1, transform: 'translateX(0px)' },
+    from: { opacity: 0, transform: 'translateY(40px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
     config: baseSpringConfig,
     delay: fadeInDelay + staggerDelay,
   });
 
   const buttonSpring = useSpring({
-    from: { opacity: 0, transform: 'scale(0.8)' },
-    to: { opacity: 1, transform: 'scale(1)' },
+    from: { opacity: 0, transform: 'translateY(40px)' },
+    to: { opacity: 1, transform: 'translateY(0px)' },
     config: baseSpringConfig,
     delay: fadeInDelay + 2 * staggerDelay,
   });
@@ -42,22 +43,35 @@ const HeroBanner = () => {
   return (
     <div className="container py-0 py-md-0">
       <div className="row my-0">
-        <div className={`col-md-6 py-5 order-md-${isMobile ? '2' : '1'}`}>
+        <div className={`col-md-8 col-lg-7 py-5 order-md-${isMobile ? '2' : '1'}`}>
           <animated.h1 style={h1Spring} className="title text-white">
-            Hi, I'm Erik
+            Product Designer, Developer, and Technologist
           </animated.h1>
           <animated.p style={pSpring} className="sub-header mt-4 light-white">
-            Lead product designer, developer, and technologist with a passion in creating human-centered products that bring people together.
+           Transforming business needs into user-centered solutions.
+            <span className="font-weight-light d-block mt-3">7+ years professional experience</span>
+            <span className="font-weight-light d-block">Denver, Colorado based</span>
           </animated.p>
-          <animated.a
-            href="mailto:erikrdgz2@gmail.com"
-            className="submit-btn d-block btn col-12 col-md-4 mt-5 text-white"
-            style={buttonSpring}
-          >
-            Message Me
-          </animated.a>
+          <animated.div style={buttonSpring}>
+            <Button
+              variant="contained"
+              color="primary"
+              href="mailto:erikrdgz2@gmail.com"
+              sx={{
+                backgroundColor: '#1976d2', // Blue color
+                color: '#fff', // White text color
+                '&:hover': {
+                  backgroundColor: '#115293', // Darker blue on hover
+                  color: '#fff', // Ensure text stays white on hover
+                },
+              }}
+              className="col-12 col-md-4 mt-5"
+            >
+              Message Me
+            </Button>
+          </animated.div>
         </div>
-        <div className={`col-md-6 mt-1 text-right mb-0 order-md-${isMobile ? '1' : '2'}`}>
+        <div className={`col-md-4 col-lg-5 mt-1 text-right mb-0 order-md-${isMobile ? '1' : '2'}`}>
           <div className="img-height">
             <animated.img src={erik} alt="Me" className="img-fluid erik-pic rounded-circle" style={imgSpring} />
           </div>

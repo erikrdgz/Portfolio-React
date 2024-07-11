@@ -23,7 +23,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 // import NSLSVideo from "../../assets/videos/nsls-vid.mp4";
 // import DialpadVideo from "../../assets/videos/dialpad-animated.mp4";
 
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 
 import ContactForm from "../ContactForm";
 
@@ -303,7 +303,7 @@ with a passion in creating human centered products that bring people together.
 
 
           <AnimatedSection
-            title="Senior Product Designer"
+            // title="Senior Product Designer"
             subtitle="National Society of Leadership and Success"
             summary="As the Senior Product Designer for NSLS, I oversaw the entirety of the user experience process from start to finish resulting in a cohesive experience across multiple platforms for students."
             linkText="View Case Study"
@@ -330,7 +330,7 @@ with a passion in creating human centered products that bring people together.
 
 
           <AnimatedSection
-            title="Product Designer"
+            // title="Product Designer"
             subtitle="Dialpad"
             summary=" While collaborating with the Dialpad Design Team I crafted new features for their existing platform, contributed to the design system and enhanced user performance on a new vertical."
             linkText="View Case Study"

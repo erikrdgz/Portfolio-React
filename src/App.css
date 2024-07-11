@@ -1,17 +1,17 @@
 :root {
-  --main-color: #020202;
+  --main-color: #121212;
   --dark-bg: #121212;
   --light-bg: #fff;
   --section-color: #e6e6e6;
   --accent-1: #74F0ED;
   --accent-2: #678fff;
-  --accent-2-light: #080808;
+  --accent-2-light: #121212;
 }
 
 
 html,
 body {
-  font-size: 18px;
+  font-size: 16px;
   background: var(--light-bg);
 }
 
@@ -50,7 +50,7 @@ body {
 }
 
 .bg-black{
-  background: #000!important;
+  background: #121212!important;
 }
 
 .summary {
@@ -123,6 +123,9 @@ body {
   color: var(--accent-2)!important;
 }
 
+.title{
+  font-weight: 900;
+}
 
 
 @media screen and (min-width: 1200px) {
@@ -259,12 +262,11 @@ body {
   }
 
   .section-title{
-    font-size: 3.2rem;
+    font-size: 1.8rem;
   }
 
   .section-p{
     font-size: 1rem;
-    color: #ccc!important;
   }
 }
 
@@ -286,8 +288,7 @@ body {
 p {
   line-height: 1.9;
   font-weight: 100;
-  color: #6a6a6a;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -1468,7 +1469,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 0px;
   font-size: 16px;
   margin-top: 5px;
 }

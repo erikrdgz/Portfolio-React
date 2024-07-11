@@ -123,7 +123,7 @@ function NSLSCase(props) {
                 <AnimatedHeader
                     
                     subtitle="National Society of Leadership and Success"
-                    description="In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision."
+                    description="At NSLS, my primary responsibility was to lead and execute design initiatives to resolve various UX issues and improve user experience across multiple applications. This case study highlights my approach and the impact of my work on the overall digital experience at NSLS."
                     descriptionClassName="text-white"
                 />
             </div>
@@ -133,9 +133,9 @@ function NSLSCase(props) {
 
 
 
-            <section className="container section-spacing ">
+            <section className="container-fluid section-spacing ">
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
+                    <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center order-2 order-md-1 py-3 ">
       
 
                         <AnimatedImageGrow
@@ -144,7 +144,7 @@ function NSLSCase(props) {
                             className="img-fluid w-100 rounded shadow"
                         />
                     </div>
-                    <div className="col-md-6 order-1 order-md-2">
+                    <div className="col-md-12 col-lg-6 order-1 order-md-2">
      
                         <AnimatedTitleParagraph
                             title="The Problem"
@@ -157,7 +157,7 @@ function NSLSCase(props) {
             </section>
 
 
-            <section className="container section-spacing px-4">
+            <section className="container-fluid section-spacing px-4">
                 <div className="row">
                     <div className="col-md-6 col-lg-6">
                         <div className="d-flex flex-row justify-content-between">
@@ -165,7 +165,7 @@ function NSLSCase(props) {
                             <FiArrowRight size={26} className="mt-3 text-main d-none d-md-block" />
                         </div>
 
-                        <p className=" font-weight-bolder  section-p cs-section-p">
+                        <p className=" font-weight-bolde  section-p cs-section-p">
                             During the discovery phase, I delved deep into unraveling the mysteries behind NSLS's design mishaps and user experience hiccups across its myriad applications. Collaborating closely with the team, I led the charge in untangling fragmentation woes, weaving together a cohesive design tapestry for a smoother user journey. With clear objectives and measurable outcomes in mind, I charted a strategic course towards implementing solutions that not only spruced up the brand's identity but also captivated users, making their experience truly unforgettable.
                         </p>
 
@@ -176,26 +176,29 @@ function NSLSCase(props) {
                             <h3 className="py-2 font-weight-bold ">Research</h3>
                   
                         </div>
-                        <p className=" font-weight-bolder  section-p cs-section-p">
+                        <p className=" font-weight-bolde  section-p cs-section-p">
                             During the research phase, I embarked on a journey through market analysis, user interviews, and competitor snooping to uncover NSLS's struggle with scattered design across applications. Armed with user quirks and behavior insights, I pinpointed specific pain points and areas ripe for a design makeover. Through rounds of playful testing and validation, I polished these insights, ensuring our design revamp not only met user needs but also injected some excitement into NSLS's mission.
                         </p>
 
                     </div>
 
-                    <div className="col-md-12 d-flex justify-content-end align-items-center  py-3">
+                    
+
+                </div>
+
+
+            </section>
+            <div className="container">
+                <div className="col-md-12 d-flex justify-content-end align-items-center  py-3">
                         <animated.img
                             style={bannerAnimation}
                             src={discovery}
                             alt="Banner"
                             className="img-fluid w-100 rounded shadow cs-image"
                         />
-                    </div>
-
                 </div>
-
-
-            </section>
-            <div className="col-12 bg -white d-flex justify-content-center py-3">
+            </div>
+            <div className="col-12 bg-white d-flex justify-content-center py-3">
                 <div>
                     <FiChevronDown size={36} className='text-main' />
                 </div>
@@ -203,12 +206,12 @@ function NSLSCase(props) {
             </div>
 
             <section className="section-spacing ">
-                <div className="container">
+                <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-6 order-2 order-md-1">
+                        <div className="col-md-12 col-lg-6 order-2 order-md-1">
                             <h3 className="py-2 font-weight-bold text-main">Strategy &amp; Design</h3>
                             <h2 className="py-2 font-weight-bold section-title cs-section-title mb-4">Revamping NSLS's Interface and User Experience</h2>
-                            <p className=" font-weight-bolder  section-p cs-section-p">
+                            <p className=" font-weight-bolde  section-p cs-section-p">
 
 
                                 Tackling NSLS's hurdles with fragmented applications and inconsistent design, I spearheaded a thorough audit of their existing platforms. This entailed diving into user feedback, uncovering pain points, and scrutinizing design discrepancies. Teaming up closely with the product squad, I took the reins in crafting a unified design system that embraced brand guidelines, UI components, and interaction patterns. <br /> <br />
@@ -216,7 +219,7 @@ function NSLSCase(props) {
                             </p>
 
                         </div>
-                        <div className="col-md-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
+                        <div className="col-md-12 col-lg-6 d-flex justify-content-end align-items-center order-1 order-md-2 py-3">
 
                             <AnimatedImageGrow
                                 src={wireframe}
@@ -224,15 +227,19 @@ function NSLSCase(props) {
                                 className="img-fluid w-100 rounded shadow"
                             />
                         </div>
-                        <div className="col-12 order-3 py-3 my-md-5">
-                            <AnimatedImageGrow
-                                src={dashboard}
-                                alt="Banner"
-                                className="img-fluid w-100 rounded shadow"
-                            />
-                        </div>
+                        
                     </div>
                 </div>
+                <div className="container">
+                    <div className="col-12 order-3 py-3 my-md-5">
+                                <AnimatedImageGrow
+                                    src={dashboard}
+                                    alt="Banner"
+                                    className="img-fluid w-100 rounded shadow"
+                                />
+                    </div>
+                </div>
+                
 
 
             </section>
@@ -252,19 +259,19 @@ function NSLSCase(props) {
                 </div>
                 <div className="container-fluid ">
                     <div className="row">
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Unified Communication Channels</h5>
                             <AnimatedList items={communicationSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Engaging Virtual Environments</h5>
                             <AnimatedList items={virtualEnvironmentSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Cohesive Team Collaboration</h5>
                             <AnimatedList items={teamCollaborationSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
-                        <div className="col-md-3 my-5">
+                        <div className="col-md-6 col-lg-3 my-5">
                             <h5 className='font-weight-bolder'>Streamlined Resource Access</h5>
                             <AnimatedList items={resourceAccessSolutions} fontSize="0.85rem" iconClass="text-success" />
                         </div>
@@ -275,9 +282,9 @@ function NSLSCase(props) {
             </section>
 
 
-            <section className="container section-spacing ">
+            <section className="container-fluid section-spacing ">
                 <div className="row">
-                    <div className="col-md-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
+                    <div className="col-md-12 col-lg-6 d-flex justify-content-end align-items-center order-2 order-md-1 py-3">
          
                         <AnimatedImageGrow
                             src={appImages}
@@ -285,7 +292,7 @@ function NSLSCase(props) {
                             className="img-fluid w-100 rounded shadow"
                         />
                     </div>
-                    <div className="col-md-6 order-1 order-md-2">
+                    <div className="col-md-12 col-lg-6 order-1 order-md-2">
          
                         <AnimatedTitleParagraph
                             title="Cohesive Design"

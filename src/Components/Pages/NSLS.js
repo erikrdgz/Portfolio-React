@@ -35,7 +35,7 @@ function NSLS(props) {
                     <div className="col-12 text-center">
                         <h1>National Society of Leadership and Success</h1>
                         <p className="py-4 py-lg-5 col-md-8 mx-auto">
-                            In my role as a Senior Product Designer at NSLS, I have gained invaluable insights into the dynamic intersection of design leadership and product development. Leading initiatives at NSLS has not only honed my design skills but has also provided me with a holistic understanding of how to guide a team towards a shared vision.
+                        At NSLS, my primary responsibility was to lead and execute design initiatives to resolve various UX issues and improve user experience across multiple applications. This case study highlights my approach and the impact of my work on the overall digital experience at NSLS.
                         </p>
                     </div>
                 </div>

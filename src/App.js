@@ -107,74 +107,10 @@ function App() {
     <BrowserRouter>
       <div className="App container-fluid px-0">
 
-        {/* <nav className="navbar navbar-expand-lg navbar-dark bg-main py-lg-5  mt-md-0 shadow-menu">
-
-          <div className="icons d-md-none mb-3">
-            <a href="https://github.com/erikrdgz" target="_blank" className="mx-1 text-white ">
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a href="https://www.linkedin.com/in/erikrdgz" target="_blank" className="mx-1 text-white ">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </div>
-          <Link to="/" href="#"><p className="logo-font text-white ">ERIK RODRIGUEZ</p></Link>
-
-          <button onClick={handleToggle} className={`navbar-toggler hamburger hamburger--emphatic ${isActive ? null : "is-active"}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className=" hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
-          </button>
-
-          <div className={`collapse navbar-collapse ${expanded ? null : "hide"} `} id="navbarSupportedContent">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-
-                <Link to="/" className="item nav-link" onClick={NavLinkOpen}>Home</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/case-study/nsls" className="item nav-link" onClick={NavLinkOpen}>NSLS</Link>
-              </li>
-
-              <li className="nav-item">
-                <Link to="/case-study/dialpad" className="item nav-link" onClick={NavLinkOpen}>Dialpad</Link>
-              </li>
-
-
-              <li className="nav-item">
-                <Link to="/designs" className="item nav-link" onClick={NavLinkOpen}>Designs</Link>
-              </li>
-
-              <li className="nav-item">
-
-                <Link to="/contact" className="item nav-link mr-lg-5" onClick={NavLinkOpen}>Contact</Link>
-              </li>
-
-              <li className="nav-item d-none d-md-block">
-
-                <a href="https://www.linkedin.com/in/erikrdgz" target="_blank" className="item nav-link">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-
-              </li>
-
-              <li className="nav-item d-none d-md-block">
-
-                <a href="https://github.com/erikrdgz" target="_blank" className="item nav-link">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
-
-              </li>
-
-
-
-            </ul>
-
-          </div>
-        </nav> */}
+  
 
 <nav className="navbar navbar-expand-lg navbar-dark bg-main mt-md-0 shadow-menu sticky-top">
-      <div className="icons d-md-none mb-3">
+      <div className="icons d-md-none mb-0">
         <a href="https://github.com/erikrdgz" target="_blank" className="mx-1 text-white ">
           <FontAwesomeIcon icon={faGithub} />
         </a>
@@ -182,7 +118,7 @@ function App() {
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
-      <Link to="/" href="#"><p className="logo-font text-white">ERIK RODRIGUEZ</p></Link>
+      <Link to="/" href="#"><p className="logo-font text-white mb-0">ERIK RODRIGUEZ</p></Link>
 
       <button onClick={toggleDropdown} className="navbar-toggler hamburger hamburger--emphatic" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className={`hamburger-box ${isDropdownOpen ? 'is-active' : ''}`}>

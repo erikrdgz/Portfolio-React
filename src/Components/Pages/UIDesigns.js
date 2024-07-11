@@ -37,7 +37,7 @@ function UIDesigns(props) {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container-fluid mt-4">
       <header className="">
         <div className="row">
           <div className="col-12 text-left text-md-center">

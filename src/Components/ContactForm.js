@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
+import { Button } from '@mui/material';
+import { RxPaperPlane } from "react-icons/rx";
 import '../App.css'; // Ensure you create this CSS file and import it
 
 const ContactForm = ({ heading }) => {
@@ -24,7 +26,7 @@ const ContactForm = ({ heading }) => {
   };
 
   return (
-    <div className="contact-form-container p-4 col-md-7 mx-auto">
+    <div className="contact-form-container p-4 col-12 col-lg-7 mx-auto">
       {submitted ? (
         <p className="thank-you-message">Thank you for your message!</p>
       ) : (
@@ -45,7 +47,24 @@ const ContactForm = ({ heading }) => {
               <label htmlFor="message">Message:</label>
               <textarea name="message" id="message" required />
             </div>
-            <button type="submit" className="submit-btn">Send Email</button>
+            <Button
+              type="submit"
+              variant="contained"
+              color="primary"
+              endIcon={<RxPaperPlane />}
+              sx={{
+                backgroundColor: '#1976d2', // Blue color
+                color: '#fff', // White text color
+                '&:hover': {
+                  backgroundColor: '#115293', // Darker blue on hover
+                  color: '#fff', // Ensure text stays white on hover
+                },
+                mt: 2, // Margin top for spacing
+              }}
+              className=""
+            >
+              Send Email
+            </Button>
           </form>
         </div>
       )}
